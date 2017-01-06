@@ -1,0 +1,21 @@
+.beer #head {
+  background: #f4f4f4 url(../images/beer.png) top center;
+  background-size: cover;
+  color: #7C7C7C;
+  padding: 30px 0 35px 0;
+}
+
+.beer #head {
+  padding: 180px 0;
+}
+
+.beer #head .title {
+  font-size: 49px;
+  font-size: 3.0625rem;
+}
+.beer #head .tagline {
+  font-size: 16px;
+  font-size: 1rem;
+  margin: 15px 0 0;
+}
+
