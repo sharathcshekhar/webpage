@@ -36,7 +36,7 @@
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
 <body class="beer">
-
+	<div id="wrapper">
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="2">
 		<h1 id="logo" class="text-center">
@@ -83,8 +83,60 @@
 		<div class="row section topspace">
 			<div class="col-md-12">
 				<p class="lead text-justified text-muted"> 
-				Homebrewer	
+				When I am not doing my research or not drinking my beer, I am
+				found brewing my own beer.
+				I love beer and I have disguised the beer drinking problem as a
+				homebrewing hobby. I am nano scale brewer, brewing beers in
+				batches of 1-2 gallons. If you live in the Buffalo area and want
+				to get in touch to start brewing, I will be glad to help!<br>
 				</p>
+				<h2> Beers </h2>
+				<h3> KBS </h3>
+				This is a clone of the KBS beer. I made some ingridient
+				substitutions. Here is the recipe 
+				<button type="button" onclick="loadXMLDoc()">Recipes</button>
+				<br><br>
+				<table id="demo"></table>
+<script>
+
+function loadXMLDoc() {
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			myFunction(this);
+		}
+	};
+	xmlhttp.open("GET", "http://localhost:8080/assets/recipes/KBS.xml", true);
+	xmlhttp.send();
+}
+
+function myFunction(xml) {
+	var i;
+	var xmlDoc = xml.responseXML;
+	var table="<tr><th>Ingridient</th><th>Amount</th></tr>";
+	var x =
+		xmlDoc.getElementsByTagName("RECIPE")[0].getElementsByTagName("FERMENTABLES")[0].getElementsByTagName("FERMENTABLE");
+	for (i = 0; i <x.length; i++) { 
+		table += "<tr><td>" + 
+			x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
+			"</td><td>" +
+			x[i].getElementsByTagName("AMOUNT")[0].childNodes[0].nodeValue +
+			"</td></tr>";
+	}
+	var x =
+		xmlDoc.getElementsByTagName("RECIPE")[0].getElementsByTagName("HOPS")[0].getElementsByTagName("HOP");
+	for (i = 0; i <x.length; i++) { 
+		table += "<tr><td>" + 
+			x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
+			"</td><td>" +
+			x[i].getElementsByTagName("AMOUNT")[0].childNodes[0].nodeValue +
+			"</td></tr>";
+	}
+
+	document.getElementById("demo").innerHTML = table;
+}
+</script>
+	
 			</div>
 		</div> <!-- / section -->
 		
@@ -116,5 +168,8 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="assets/js/template.js"></script>
+
+
+	</div>
 </body>
 </html>
