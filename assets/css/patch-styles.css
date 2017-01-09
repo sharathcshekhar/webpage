@@ -1,6 +1,14 @@
+div#wrapper {
+  min-height: 100vh;
+  position: relative;
+}
+
 main#main {
     padding-bottom: 60px;
     min-height: 100%;
+	max-width: 800px;
+  	margin: auto;
+  	text-align: justify;
 }
 
 .container {
@@ -11,3 +19,4 @@ div#publish {
 	font-style: italic;
     font-weight: lighter
 }
+
