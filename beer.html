@@ -91,52 +91,22 @@
 				to get in touch to start brewing, I will be glad to help!<br>
 				</p>
 				<h2> Beers </h2>
-				<h3> KBS </h3>
+				<h3>KBS</h3>
 				This is a clone of the KBS beer. I made some ingridient
-				substitutions. Here is the recipe 
-				<button type="button" onclick="loadXMLDoc()">Recipes</button>
-				<br><br>
-				<table id="demo"></table>
-<script>
+				substitutions. Here is the recipe. <br>
+				<button type="button" onclick="toggleRecipe('kbs')">Recipe</button>
+				<br>
+				<div id="kbs_div" style="display:none">
+					<table id="kbs_table"></table>
+				</div>
+				<h3>Vanilla Latte Stout</h3>
+				Coffee milk stout with vanilla additions. Here is the recipe. <br>
+				<button type="button" onclick="toggleRecipe('latte_stout')">Recipe</button>
+				<br>
+				<div id="latte_stout_div" style="display:none">
+					<table id="latte_stout_table"></table>
+				</div>
 
-function loadXMLDoc() {
-	var xmlhttp = new XMLHttpRequest();
-	xmlhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			myFunction(this);
-		}
-	};
-	xmlhttp.open("GET", "http://localhost:8080/assets/recipes/KBS.xml", true);
-	xmlhttp.send();
-}
-
-function myFunction(xml) {
-	var i;
-	var xmlDoc = xml.responseXML;
-	var table="<tr><th>Ingridient</th><th>Amount</th></tr>";
-	var x =
-		xmlDoc.getElementsByTagName("RECIPE")[0].getElementsByTagName("FERMENTABLES")[0].getElementsByTagName("FERMENTABLE");
-	for (i = 0; i <x.length; i++) { 
-		table += "<tr><td>" + 
-			x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
-			"</td><td>" +
-			x[i].getElementsByTagName("AMOUNT")[0].childNodes[0].nodeValue +
-			"</td></tr>";
-	}
-	var x =
-		xmlDoc.getElementsByTagName("RECIPE")[0].getElementsByTagName("HOPS")[0].getElementsByTagName("HOP");
-	for (i = 0; i <x.length; i++) { 
-		table += "<tr><td>" + 
-			x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
-			"</td><td>" +
-			x[i].getElementsByTagName("AMOUNT")[0].childNodes[0].nodeValue +
-			"</td></tr>";
-	}
-
-	document.getElementById("demo").innerHTML = table;
-}
-</script>
-	
 			</div>
 		</div> <!-- / section -->
 		
@@ -168,7 +138,7 @@ function myFunction(xml) {
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="assets/js/template.js"></script>
-
+<script src="assets/js/beer.js"></script>
 
 	</div>
 </body>
