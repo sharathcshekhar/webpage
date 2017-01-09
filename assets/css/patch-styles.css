@@ -6,3 +6,8 @@ main#main {
 .container {
     min-height: 100%;
 }
+
+div#publish {
+	font-style: italic;
+    font-weight: lighter
+}

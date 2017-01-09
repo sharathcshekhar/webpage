@@ -17,6 +17,7 @@ function displayRecipe(xml, recipe_table) {
 	var table="<tr><th>Ingridient</th><th>Amount</th></tr>";
 	var x =
 		xmlDoc.getElementsByTagName("RECIPE")[0].getElementsByTagName("FERMENTABLES")[0].getElementsByTagName("FERMENTABLE");
+	table +="<th colspan='2'>Fermentables</th>"
 	for (i = 0; i <x.length; i++) { 
 		var amount_str = x[i].getElementsByTagName("AMOUNT")[0].childNodes[0].nodeValue;
 		var amount = (parseFloat(amount_str) * 2.2).toFixed(2) + ' lbs';
@@ -27,6 +28,7 @@ function displayRecipe(xml, recipe_table) {
 	}
 	var x =
 		xmlDoc.getElementsByTagName("RECIPE")[0].getElementsByTagName("HOPS")[0].getElementsByTagName("HOP");
+	table +="<th colspan='2'>Hops</th>"
 	for (i = 0; i <x.length; i++) { 
 		var amount_str = x[i].getElementsByTagName("AMOUNT")[0].childNodes[0].nodeValue;
 		var amount = (parseFloat(amount_str) * 35.274).toFixed(2) + ' oz';
