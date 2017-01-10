@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RECIPE>
+    <AGE>14</AGE>
+    <FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+    <BATCH_SIZE>4.731764793395996</BATCH_SIZE>
+    <SECONDARY_TEMP>21.0</SECONDARY_TEMP>
+    <TYPE>All Grain</TYPE>
+    <BOIL_SIZE>9.463529472830079</BOIL_SIZE>
+    <TERTIARY_TEMP>21.0</TERTIARY_TEMP>
+    <DISPLAY_OG>0.0</DISPLAY_OG>
+    <NAME>German Red Ale</NAME>
+    <FG>1.008</FG>
+    <EQUIPMENT/>
+    <SECONDARY_AGE>0</SECONDARY_AGE>
+    <PRIMARY_AGE>14</PRIMARY_AGE>
+    <OG>1.048</OG>
+    <VERSION>1</VERSION>
+    <PRIMARY_TEMP>21.0</PRIMARY_TEMP>
+    <NOTES/>
+    <DISPLAY_FG>0.0</DISPLAY_FG>
+    <BREWER/>
+    <TERTIARY_AGE>0</TERTIARY_AGE>
+    <BOIL_TIME>60</BOIL_TIME>
+    <EFFICIENCY>75.0</EFFICIENCY>
+    <HOPS>
+      <HOP>
+        <NAME>Hersbrucker</NAME>
+        <VERSION>0</VERSION>
+        <ALPHA>3.5</ALPHA>
+        <AMOUNT>0.0056699</AMOUNT>
+        <USE>Boil</USE>
+        <TIME>60</TIME>
+        <NOTES>No description</NOTES>
+        <TYPE>Hop</TYPE>
+        <FORM>Pellet</FORM>
+      </HOP>
+      <HOP>
+        <NAME>Perle</NAME>
+        <VERSION>0</VERSION>
+        <ALPHA>8.3</ALPHA>
+        <AMOUNT>0.00283495</AMOUNT>
+        <USE>Boil</USE>
+        <TIME>60</TIME>
+        <NOTES>No description</NOTES>
+        <TYPE>Hop</TYPE>
+        <FORM>Pellet</FORM>
+      </HOP>
+      <HOP>
+        <NAME>Hersbrucker</NAME>
+        <VERSION>0</VERSION>
+        <ALPHA>3.5</ALPHA>
+        <AMOUNT>0.0056699</AMOUNT>
+        <USE>Boil</USE>
+        <TIME>5</TIME>
+        <NOTES>No description</NOTES>
+        <TYPE>Hop</TYPE>
+        <FORM>Pellet</FORM>
+      </HOP>
+    </HOPS>
+    <FERMENTABLES>
+      <FERMENTABLE>
+        <NAME>Pilsen DME</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Extract</TYPE>
+        <AMOUNT>0.38555352</AMOUNT>
+        <YIELD>90.87999999999992</YIELD>
+        <COLOR>1.899999976158142</COLOR>
+        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
+      </FERMENTABLE>
+      <FERMENTABLE>
+        <NAME>Munich (German)</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Grain</TYPE>
+        <AMOUNT>0.14968548</AMOUNT>
+        <YIELD>80.06000000000016</YIELD>
+        <COLOR>8.0</COLOR>
+        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
+      </FERMENTABLE>
+      <FERMENTABLE>
+        <NAME>Honey Malt (Canadian)</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Grain</TYPE>
+        <AMOUNT>0.09071847</AMOUNT>
+        <YIELD>64.9200000000002</YIELD>
+        <COLOR>18.0</COLOR>
+        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
+      </FERMENTABLE>
+      <FERMENTABLE>
+        <NAME>Six-row (US)</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Grain</TYPE>
+        <AMOUNT>0.09071847</AMOUNT>
+        <YIELD>75.72999999999993</YIELD>
+        <COLOR>1.7999999523162842</COLOR>
+        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
+      </FERMENTABLE>
+      <FERMENTABLE>
+        <NAME>Special "B" (Belgian)</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Grain</TYPE>
+        <AMOUNT>0.07484274</AMOUNT>
+        <YIELD>64.9200000000002</YIELD>
+        <COLOR>160.0</COLOR>
+        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
+      </FERMENTABLE>
+      <FERMENTABLE>
+        <NAME>Biscuit (Belgian)</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Grain</TYPE>
+        <AMOUNT>0.03628739</AMOUNT>
+        <YIELD>75.72999999999993</YIELD>
+        <COLOR>24.0</COLOR>
+        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
+      </FERMENTABLE>
+    </FERMENTABLES>
+    <MISCS/>
+    <YEASTS>
+      <YEAST>
+        <NAME>Safale K-97</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Yeast</TYPE>
+        <AMOUNT>0.05</AMOUNT>
+        <LABORATORY>Fermentis</LABORATORY>
+        <PRODUCT_ID>K-97</PRODUCT_ID>
+        <MIN_TEMPERATURE>17</MIN_TEMPERATURE>
+        <MAX_TEMPERATURE>17</MAX_TEMPERATURE>
+        <ATTENUATION>81.0</ATTENUATION>
+      </YEAST>
+    </YEASTS>
+    <WATERS/>
+    <MASH>
+      <TUN_WEIGHT>0.00000000</TUN_WEIGHT>
+      <GRAIN_TEMP>20.00000000</GRAIN_TEMP>
+      <VERSION>1</VERSION>
+      <NAME>New Mash Profile</NAME>
+      <NOTES/>
+      <TUN_SPECIFIC_HEAT>0.00000000</TUN_SPECIFIC_HEAT>
+      <EQUIP_ADJUST>FALSE</EQUIP_ADJUST>
+      <TUN_TEMP>20.00000000</TUN_TEMP>
+      <SPARGE_TEMP>75.55550000</SPARGE_TEMP>
+      <PH>7.00000000</PH>
+      <MASH_STEPS/>
+    </MASH>
+    <STYLE>
+      <PROFILE/>
+      <ABV_MIN>0.00000000</ABV_MIN>
+      <CARB_MAX>0.00000000</CARB_MAX>
+      <FG_MAX>1.01500000</FG_MAX>
+      <IBU_MAX>40.00000000</IBU_MAX>
+      <TYPE/>
+      <NAME>American Amber Ale</NAME>
+      <STYLE_GUIDE/>
+      <OG_MIN>1.04500000</OG_MIN>
+      <CATEGORY/>
+      <OG_MAX>1.06000000</OG_MAX>
+      <COLOR_MIN>10.00000000</COLOR_MIN>
+      <ABV_MAX>100.00000000</ABV_MAX>
+      <EXAMPLES/>
+      <INGREDIENTS/>
+      <FG_MIN>1.01000000</FG_MIN>
+      <STYLE_LETTER/>
+      <VERSION>1</VERSION>
+      <NOTES/>
+      <IBU_MIN>25.00000000</IBU_MIN>
+      <CARB_MIN>0.00000000</CARB_MIN>
+      <COLOR_MAX>17.00000000</COLOR_MAX>
+      <CATEGORY_NUMBER/>
+    </STYLE>
+  </RECIPE>

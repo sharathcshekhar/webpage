@@ -11,7 +11,7 @@ function loadXMLRecipe(recipe) {
 }
 
 function displayRecipe(xml, recipe) {
-	var recipe_div = recipe + '_div';
+	var recipe_sum = recipe + '_sum';
 	var recipe_table = recipe + '_table';
 	var i;
 	var xmlDoc = xml.responseXML;
@@ -19,7 +19,7 @@ function displayRecipe(xml, recipe) {
 	var rec_node = xmlDoc.getElementsByTagName("RECIPE")[0];
 	var name =
 		rec_node.getElementsByTagName("NAME")[0].childNodes[0].nodeValue;
-	var summary = "<\p>Name: " + name + "<br>;
+	var summary = "<\p>Name: " + name + "<br>";
 	var size =
 		rec_node.getElementsByTagName("BATCH_SIZE")[0].childNodes[0].nodeValue;
 	summary += "Size: " + (parseFloat(size) / 3.76).toFixed(2) + "G<br>"
@@ -29,14 +29,15 @@ function displayRecipe(xml, recipe) {
 	var og =
 		rec_node.getElementsByTagName("OG")[0].childNodes[0].nodeValue;
 	summary += "OG: " + og + "<br>"
-	var srm =
-		rec_node.getElementsByTagName("SRM")[0].childNodes[0].nodeValue;
-	summary += "SRM: " + srm + "<br>"
-	var ibu =
-		rec_node.getElementsByTagName("IBU")[0].childNodes[0].nodeValue;
-	summary += "IBU: " + ibu + "<br><\p>"
+	//var srm =
+	//	rec_node.getElementsByTagName("SRM")[0].childNodes[0].nodeValue;
+	//summary += "SRM: " + srm + "<br>"
+	//var ibu =
+	//	rec_node.getElementsByTagName("IBU")[0].childNodes[0].nodeValue;
+	//summary += "IBU: " + ibu + "<br><\p>"
+	summary += "<\p>"
 
-	document.getElementById(recipe_div).innerHTML = summary;
+	document.getElementById(recipe_sum).innerHTML = summary;
 
 	var table="<tr><th>Ingridient</th><th>Amount</th></tr>";
 
@@ -53,7 +54,7 @@ function displayRecipe(xml, recipe) {
 	}
 	var x =
 		xmlDoc.getElementsByTagName("RECIPE")[0].getElementsByTagName("HOPS")[0].getElementsByTagName("HOP");
-	table +="<th colspan='2'>Hops</th>"
+	table +="<th colspan='2' style="text-align:center">Hops</th>"
 	for (i = 0; i <x.length; i++) { 
 		var amount_str = x[i].getElementsByTagName("AMOUNT")[0].childNodes[0].nodeValue;
 		var amount = (parseFloat(amount_str) * 35.274).toFixed(2) + ' oz';
@@ -69,8 +70,8 @@ function displayRecipe(xml, recipe) {
 }
 
 function toggleRecipe(recipe) {
-	var recDiv = recipe + '_div';
-	var x = document.getElementById(recDiv);
+	var rec_div = recipe + '_div';
+	var x = document.getElementById(rec_div);
 	if (x.style.display === 'none') {
 		loadXMLRecipe(recipe);
 		x.style.display = 'block';
