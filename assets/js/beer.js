@@ -19,7 +19,7 @@ function displayRecipe(xml, recipe) {
 	var rec_node = xmlDoc.getElementsByTagName("RECIPE")[0];
 	var name =
 		rec_node.getElementsByTagName("NAME")[0].childNodes[0].nodeValue;
-	var summary = "<\p>Name: " + name + "<br>;
+	var summary = "<\p>Name: " + name + "<br>";
 	var size =
 		rec_node.getElementsByTagName("BATCH_SIZE")[0].childNodes[0].nodeValue;
 	summary += "Size: " + (parseFloat(size) / 3.76).toFixed(2) + "G<br>"

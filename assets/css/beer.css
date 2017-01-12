@@ -23,12 +23,25 @@ button {
 	background-color: #555555;
 	border: none;
 	color: white;
-	padding: 5px 20px;
+	padding: 4px 2px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
+	font-size: 14px;
+	margin: 10px 10px;
 	cursor: pointer;
+	min-width: 100px
 }
 
+a.button {
+	background-color: #555555;
+	border: none;
+	color: white;
+	padding: 4px 2px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 10px 10px;
+	min-width: 100px
+}
