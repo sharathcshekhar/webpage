@@ -19,23 +19,23 @@ function displayRecipe(xml, recipe) {
 	var rec_node = xmlDoc.getElementsByTagName("RECIPE")[0];
 	var name =
 		rec_node.getElementsByTagName("NAME")[0].childNodes[0].nodeValue;
-	var summary = "<\p>Name: " + name + "<br>";
+	var summary = "<\p> Name: " + name + "<br>";
 	var size =
 		rec_node.getElementsByTagName("BATCH_SIZE")[0].childNodes[0].nodeValue;
-	summary += "Size: " + (parseFloat(size) / 3.76).toFixed(2) + "G<br>"
+	summary += "Size: " + (parseFloat(size) / 3.76).toFixed(2) + "G<br>";
 	var type =
 		rec_node.getElementsByTagName("TYPE")[0].childNodes[0].nodeValue;
-	summary += "Type: " + type + "<br>"
+	summary += "Type: " + type + "<br>";
 	var og =
 		rec_node.getElementsByTagName("OG")[0].childNodes[0].nodeValue;
-	summary += "OG: " + og + "<br>"
+	summary += "OG: " + og + "<br>";
 	//var srm =
 	//	rec_node.getElementsByTagName("SRM")[0].childNodes[0].nodeValue;
 	//summary += "SRM: " + srm + "<br>"
 	//var ibu =
 	//	rec_node.getElementsByTagName("IBU")[0].childNodes[0].nodeValue;
 	//summary += "IBU: " + ibu + "<br><\p>"
-	summary += "<\p>"
+	summary += "<\p>";
 
 	document.getElementById(recipe_sum).innerHTML = summary;
 
@@ -43,7 +43,7 @@ function displayRecipe(xml, recipe) {
 
 	var x =
 		xmlDoc.getElementsByTagName("RECIPE")[0].getElementsByTagName("FERMENTABLES")[0].getElementsByTagName("FERMENTABLE");
-	table +="<th colspan='2'>Fermentables</th>"
+	table +="<th colspan='2' style='text-align:center'>Fermentables</th>";
 	for (i = 0; i <x.length; i++) { 
 		var amount_str = x[i].getElementsByTagName("AMOUNT")[0].childNodes[0].nodeValue;
 		var amount = (parseFloat(amount_str) * 2.2).toFixed(2) + ' lbs';
@@ -54,7 +54,7 @@ function displayRecipe(xml, recipe) {
 	}
 	var x =
 		xmlDoc.getElementsByTagName("RECIPE")[0].getElementsByTagName("HOPS")[0].getElementsByTagName("HOP");
-	table +="<th colspan='2' style="text-align:center">Hops</th>"
+	table +="<th colspan='2' style='text-align:center'>Hops</th>";
 	for (i = 0; i <x.length; i++) { 
 		var amount_str = x[i].getElementsByTagName("AMOUNT")[0].childNodes[0].nodeValue;
 		var amount = (parseFloat(amount_str) * 35.274).toFixed(2) + ' oz';
