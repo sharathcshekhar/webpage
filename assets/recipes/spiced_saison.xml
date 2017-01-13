@@ -125,7 +125,7 @@
         <NOTES>Custom misc</NOTES>
         <NAME>Pumpkin Pie Spice</NAME>
         <USE>Boil</USE>
-        <DISPLAY_AMOUNT>0.9999999999999999 tsp</DISPLAY_AMOUNT>
+        <DISPLAY_AMOUNT>1 tsp</DISPLAY_AMOUNT>
         <DISPLAY_TIME>5 mins</DISPLAY_TIME>
       </MISC>
       <MISC>
@@ -149,7 +149,7 @@
         <NOTES>Custom misc</NOTES>
         <NAME>Black pepper</NAME>
         <USE>Boil</USE>
-        <DISPLAY_AMOUNT>1.9999999999999998 tsp</DISPLAY_AMOUNT>
+        <DISPLAY_AMOUNT>2 tsp</DISPLAY_AMOUNT>
         <DISPLAY_TIME>5 mins</DISPLAY_TIME>
       </MISC>
     </MISCS>
