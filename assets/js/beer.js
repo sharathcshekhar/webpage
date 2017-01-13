@@ -22,7 +22,7 @@ function displayRecipe(xml, recipe) {
 	var summary = "<\p> Name: " + name + "<br>";
 	var size =
 		rec_node.getElementsByTagName("BATCH_SIZE")[0].childNodes[0].nodeValue;
-	summary += "Size: " + (parseFloat(size) / 3.76).toFixed(2) + "G<br>";
+	summary += "Size: " + (parseFloat(size) / 3.7854).toFixed(2) + "G<br>";
 	var type =
 		rec_node.getElementsByTagName("TYPE")[0].childNodes[0].nodeValue;
 	summary += "Type: " + type + "<br>";
@@ -39,7 +39,7 @@ function displayRecipe(xml, recipe) {
 
 	document.getElementById(recipe_sum).innerHTML = summary;
 
-	var table="<tr><th>Ingridient</th><th>Amount</th></tr>";
+	var table="<tr><th>Ingredients</th><th>Amount</th></tr>";
 
 	var x =
 		xmlDoc.getElementsByTagName("RECIPE")[0].getElementsByTagName("FERMENTABLES")[0].getElementsByTagName("FERMENTABLE");
@@ -62,8 +62,39 @@ function displayRecipe(xml, recipe) {
 
 		table += "<tr><td>" + 
 			x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
-			"</td><td>" + amount + " (" + time + "mins)"
+			"</td><td>" + amount + " (" + time + "mins)" +
 			"</td></tr>";
+	}
+
+	var x =
+		xmlDoc.getElementsByTagName("RECIPE")[0].getElementsByTagName("YEASTS")[0].getElementsByTagName("YEAST");
+	table +="<th colspan='2' style='text-align:center'>Yeast</th>";
+	for (i = 0; i < x.length; i++) { 
+			table += "<tr><td>" + 
+			x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
+			"</td><td>" + "Half packet" +
+			"</td></tr>";
+	}
+
+	var x =
+		xmlDoc.getElementsByTagName("RECIPE")[0].getElementsByTagName("MISCS")[0].getElementsByTagName("MISC");
+	if (x.length > 0) {
+		table +="<th colspan='2' style='text-align:center'>Others</th>";
+	}
+	for (i = 0; i <x.length; i++) { 
+		var amount = x[i].getElementsByTagName("DISPLAY_AMOUNT")[0].childNodes[0].nodeValue;
+		var use = x[i].getElementsByTagName("USE")[0].childNodes[0].nodeValue;
+		var time = x[i].getElementsByTagName("DISPLAY_TIME")[0].childNodes[0].nodeValue;
+
+		if (use === 'Boil') {
+			amount += ' (' + time + ')';
+		} else if (use === 'Secondary'){
+			amount += ' (Secondary)'
+		}
+		table += "<tr><td>" + 
+		x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
+		"</td><td>" + amount +
+		"</td></tr>";
 	}
 
 	document.getElementById(recipe_table).innerHTML = table;
