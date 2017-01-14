@@ -58,11 +58,19 @@ function displayRecipe(xml, recipe) {
 	for (i = 0; i <x.length; i++) { 
 		var amount_str = x[i].getElementsByTagName("AMOUNT")[0].childNodes[0].nodeValue;
 		var amount = (parseFloat(amount_str) * 35.274).toFixed(2) + ' oz';
-		var time = x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue;
+
+		var use = x[i].getElementsByTagName("USE")[0].childNodes[0].nodeValue;
+
+		if (use === 'Boil') {
+			var time = x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue;
+			amount += ' (' + time + 'mins)';
+		} else if (use === 'Dry Hop') {
+			amount += ' (dry hop)';
+		}
 
 		table += "<tr><td>" + 
 			x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
-			"</td><td>" + amount + " (" + time + "mins)" +
+			"</td><td>" + amount +
 			"</td></tr>";
 	}
 
@@ -82,20 +90,32 @@ function displayRecipe(xml, recipe) {
 		table +="<th colspan='2' style='text-align:center'>Others</th>";
 	}
 	for (i = 0; i <x.length; i++) { 
-		var amount = x[i].getElementsByTagName("DISPLAY_AMOUNT")[0].childNodes[0].nodeValue;
 		var use = x[i].getElementsByTagName("USE")[0].childNodes[0].nodeValue;
+		if (use != 'Boil') {
+			continue;
+		} 
 		var time = x[i].getElementsByTagName("DISPLAY_TIME")[0].childNodes[0].nodeValue;
-
-		if (use === 'Boil') {
-			amount += ' (' + time + ')';
-		} else if (use === 'Secondary'){
-			amount += ' (Secondary)'
-		}
+		var amount = x[i].getElementsByTagName("DISPLAY_AMOUNT")[0].childNodes[0].nodeValue;
+		amount += ' (' + time + ')';
 		table += "<tr><td>" + 
 		x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
 		"</td><td>" + amount +
 		"</td></tr>";
 	}
+	for (i = 0; i <x.length; i++) { 
+		var use = x[i].getElementsByTagName("USE")[0].childNodes[0].nodeValue;
+
+		if (use != 'Secondary') {
+			continue;
+		}
+		var amount = x[i].getElementsByTagName("DISPLAY_AMOUNT")[0].childNodes[0].nodeValue + ' (Secondary)';
+
+		table += "<tr><td>" + 
+		x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
+		"</td><td>" + amount +
+		"</td></tr>";
+	}
+
 
 	document.getElementById(recipe_table).innerHTML = table;
 }
