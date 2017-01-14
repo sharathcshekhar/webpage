@@ -5,7 +5,7 @@
     <BATCH_SIZE>4.731764736415039</BATCH_SIZE>
     <SECONDARY_TEMP>21.0</SECONDARY_TEMP>
     <TYPE>Partial Mash</TYPE>
-    <BOIL_SIZE>5.678117683698047</BOIL_SIZE>
+    <BOIL_SIZE>6.624470630981055</BOIL_SIZE>
     <TERTIARY_TEMP>21.0</TERTIARY_TEMP>
     <DISPLAY_OG>0.0</DISPLAY_OG>
     <NAME>Double Chocolate Milk Stout</NAME>
@@ -131,7 +131,32 @@
         <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
       </FERMENTABLE>
     </FERMENTABLES>
-    <MISCS/>
+    <MISCS>
+      <MISC>
+        <AMOUNT_IS_WEIGHT>false</AMOUNT_IS_WEIGHT>
+        <AMOUNT>0.02957350</AMOUNT>
+        <USE_FOR>Boil</USE_FOR>
+        <TYPE>Misc</TYPE>
+        <VERSION>1</VERSION>
+        <NOTES>Custom misc</NOTES>
+        <NAME>Chocolate Bittersweet</NAME>
+        <USE>Boil</USE>
+        <DISPLAY_AMOUNT>1.0 oz</DISPLAY_AMOUNT>
+        <DISPLAY_TIME>10 mins</DISPLAY_TIME>
+      </MISC>
+      <MISC>
+        <AMOUNT_IS_WEIGHT>false</AMOUNT_IS_WEIGHT>
+        <AMOUNT>0.02957350</AMOUNT>
+        <USE_FOR>Boil</USE_FOR>
+        <TYPE>Misc</TYPE>
+        <VERSION>1</VERSION>
+        <NOTES>Custom misc</NOTES>
+        <NAME>Cacao Nibs</NAME>
+        <USE>Secondary</USE>
+        <DISPLAY_AMOUNT>1.0 oz</DISPLAY_AMOUNT>
+        <DISPLAY_TIME>15 days</DISPLAY_TIME>
+      </MISC>
+    </MISCS>
     <YEASTS>
       <YEAST>
         <NAME>Safale US-05</NAME>
@@ -161,7 +186,7 @@
         <MASH_STEP>
           <RAMP_TIME>10.00000000</RAMP_TIME>
           <STEP_TEMP>68.90000000</STEP_TEMP>
-          <INFUSE_AMOUNT>6.14079086</INFUSE_AMOUNT>
+          <INFUSE_AMOUNT>7.08714381</INFUSE_AMOUNT>
           <END_TIME>68.90000000</END_TIME>
           <STEP_TIME>60.00000000</STEP_TIME>
           <TYPE>Infusion</TYPE>

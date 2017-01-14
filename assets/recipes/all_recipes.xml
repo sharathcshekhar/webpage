@@ -208,18 +208,18 @@
   <RECIPE>
     <AGE>14</AGE>
     <FERMENTATION_STAGES>1</FERMENTATION_STAGES>
-    <BATCH_SIZE>3.785411834716797</BATCH_SIZE>
+    <BATCH_SIZE>4.731764736415039</BATCH_SIZE>
     <SECONDARY_TEMP>21.0</SECONDARY_TEMP>
     <TYPE>Partial Mash</TYPE>
-    <BOIL_SIZE>9.463529472830079</BOIL_SIZE>
+    <BOIL_SIZE>6.624470630981055</BOIL_SIZE>
     <TERTIARY_TEMP>21.0</TERTIARY_TEMP>
     <DISPLAY_OG>0.0</DISPLAY_OG>
     <NAME>Belgian Witbier</NAME>
-    <FG>1.05</FG>
+    <FG>1.009</FG>
     <EQUIPMENT/>
     <SECONDARY_AGE>0</SECONDARY_AGE>
     <PRIMARY_AGE>14</PRIMARY_AGE>
-    <OG>1.05</OG>
+    <OG>1.04</OG>
     <VERSION>1</VERSION>
     <PRIMARY_TEMP>21.0</PRIMARY_TEMP>
     <NOTES/>
@@ -289,45 +289,78 @@
       </FERMENTABLE>
     </FERMENTABLES>
     <MISCS/>
-    <YEASTS/>
+    <YEASTS>
+      <YEAST>
+        <NAME>Belgian Witbier</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Yeast</TYPE>
+        <AMOUNT>0.12</AMOUNT>
+        <LABORATORY>Wyeast Labs</LABORATORY>
+        <PRODUCT_ID>3944</PRODUCT_ID>
+        <MIN_TEMPERATURE>20</MIN_TEMPERATURE>
+        <MAX_TEMPERATURE>20</MAX_TEMPERATURE>
+        <ATTENUATION>74.0</ATTENUATION>
+      </YEAST>
+    </YEASTS>
     <WATERS/>
     <MASH>
-      <TUN_WEIGHT>0.00000000</TUN_WEIGHT>
-      <GRAIN_TEMP>20.00000000</GRAIN_TEMP>
+      <TUN_WEIGHT>160.00000000</TUN_WEIGHT>
+      <GRAIN_TEMP>22.22222220</GRAIN_TEMP>
       <VERSION>1</VERSION>
-      <NAME>New Mash Profile</NAME>
-      <NOTES/>
-      <TUN_SPECIFIC_HEAT>0.00000000</TUN_SPECIFIC_HEAT>
+      <NAME>BIAB, Full Body</NAME>
+      <NOTES>Brew in a bag method where the full boil volume is mashed within the boil vessel and then the grains are withdrawn at the end of the mash.  No active sparging is required. This is a full body beer profile.</NOTES>
+      <TUN_SPECIFIC_HEAT>0.30000000</TUN_SPECIFIC_HEAT>
       <EQUIP_ADJUST>FALSE</EQUIP_ADJUST>
-      <TUN_TEMP>20.00000000</TUN_TEMP>
-      <SPARGE_TEMP>75.55550000</SPARGE_TEMP>
-      <PH>7.00000000</PH>
-      <MASH_STEPS/>
+      <TUN_TEMP>22.22222220</TUN_TEMP>
+      <SPARGE_TEMP>75.60000000</SPARGE_TEMP>
+      <PH>5.20000000</PH>
+      <MASH_STEPS>
+        <MASH_STEP>
+          <RAMP_TIME>10.00000000</RAMP_TIME>
+          <STEP_TEMP>68.90000000</STEP_TEMP>
+          <INFUSE_AMOUNT>7.01002416</INFUSE_AMOUNT>
+          <END_TIME>68.90000000</END_TIME>
+          <STEP_TIME>60.00000000</STEP_TIME>
+          <TYPE>Infusion</TYPE>
+          <VERSION>1</VERSION>
+          <NAME>Saccharification</NAME>
+        </MASH_STEP>
+        <MASH_STEP>
+          <RAMP_TIME>7.00000000</RAMP_TIME>
+          <STEP_TEMP>75.55555560</STEP_TEMP>
+          <INFUSE_AMOUNT>0.00000000</INFUSE_AMOUNT>
+          <END_TIME>75.55555560</END_TIME>
+          <STEP_TIME>10.00000000</STEP_TIME>
+          <TYPE>Temperature</TYPE>
+          <VERSION>1</VERSION>
+          <NAME>Mash Out</NAME>
+        </MASH_STEP>
+      </MASH_STEPS>
     </MASH>
     <STYLE>
-      <PROFILE/>
-      <ABV_MIN>0.00000000</ABV_MIN>
+      <PROFILE>Aroma: Moderate sweetness (often with light notes of honey and/or vanilla) with light, grainy, spicy wheat aromatics, often with a bit of tartness. Moderate perfumy coriander, often with a complex herbal, spicy, or peppery note in the background. Moderate zesty, citrusy orangey fruitiness. A low spicy-herbal hop aroma is optional, but should never overpower the other characteristics. No diacetyl. Vegetal, celerylike, or ham-like aromas are inappropriate. Spices should blend in with fruity, floral and sweet aromas and should not be overly strong. Appearance: Very pale straw to very light gold in color. The beer will be very cloudy from starch haze and/or yeast, which gives it a milky, whitish-yellow appearance. Dense, white, moussy head. Head retention should be quite good. Flavor: Pleasant sweetness (often with a honey and/or vanilla character) and a zesty, orange-citrusy fruitiness. Refreshingly crisp with a dry, often tart, finish. Can have a low wheat flavor. Optionally has a very light lactic-tasting sourness. Herbalspicy flavors, which may include coriander and other spices, are common should be subtle and balanced, not overpowering. A spicy-earthy hop flavor is low to none, and if noticeable, never gets in the way of the spices. Hop bitterness is low to medium-low (as with a Hefeweizen), and doesn’t interfere with refreshing flavors of fruit and spice, nor does it persist into the finish. Bitterness from orange pith should not be present. Vegetal, celery-like, ham-like, or soapy flavors are inappropriate. No diacetyl. Mouthfeel: Medium-light to medium body, often having a smoothness and light creaminess from unmalted wheat and the occasional oats. Despite body and creaminess, finishes dry and often a bit tart. Effervescent character from high carbonation. Refreshing, from carbonation, light acidity, and lack of bitterness in finish. No harshness or astringency from orange pith. Should not be overly dry and thin, nor should it be thick and heavy.</PROFILE>
+      <ABV_MIN>4.50000000</ABV_MIN>
       <CARB_MAX>0.00000000</CARB_MAX>
       <FG_MAX>1.01200000</FG_MAX>
       <IBU_MAX>20.00000000</IBU_MAX>
-      <TYPE/>
+      <TYPE>Mixed</TYPE>
       <NAME>Witbier</NAME>
-      <STYLE_GUIDE/>
+      <STYLE_GUIDE>BJCP 2008</STYLE_GUIDE>
       <OG_MIN>1.04400000</OG_MIN>
-      <CATEGORY/>
+      <CATEGORY>Belgian and French Ale</CATEGORY>
       <OG_MAX>1.05200000</OG_MAX>
       <COLOR_MIN>2.00000000</COLOR_MIN>
-      <ABV_MAX>100.00000000</ABV_MAX>
-      <EXAMPLES/>
-      <INGREDIENTS/>
+      <ABV_MAX>5.50000000</ABV_MAX>
+      <EXAMPLES>Hoegaarden Wit, St. Bernardus Blanche, Celis White, Vuuve 5, Brugs Tarwebier (Blanche de Bruges), Wittekerke, Allagash White, Blanche de Bruxelles, Ommegang Witte, Avery White Rascal, Unibroue Blanche de Chambly, Sterkens White Ale, Bell’s Winter White Ale, Victory Whirlwind Witbier, Hitachino Nest White Ale</EXAMPLES>
+      <INGREDIENTS>About 50% unmalted wheat (traditionally soft white winter wheat) and 50% pale barley malt (usually Pils malt) constitute the grist. In some versions, up to 5-10% raw oats may be used. Spices of freshly-ground coriander and Curacao or sometimes sweet orange peel complement the sweet aroma and are quite characteristic. Other spices (e.g., chamomile, cumin, cinnamon, Grains of Paradise) may be used for complexity but are much less prominent. Ale yeast prone to the production of mild, spicy flavors is very characteristic. In some instances a very limited lactic fermentation, or the actual addition of lactic acid, is done.</INGREDIENTS>
       <FG_MIN>1.00800000</FG_MIN>
-      <STYLE_LETTER/>
+      <STYLE_LETTER>A</STYLE_LETTER>
       <VERSION>1</VERSION>
-      <NOTES/>
+      <NOTES>A refreshing, elegant, tasty, moderatestrength wheat-based ale. A 400-year-old beer style that died out in the 1950s; it was later revived by Pierre Celis at Hoegaarden, and has grown steadily in popularity over time. The presence, character and degree of spicing and lactic sourness varies. Overly spiced and/or sour beers are not good examples of the style. Coriander of certain origins might give an inappropriate ham or celery character. The beer tends to be fragile and does not age well, so younger, fresher, properly handled examples are most desirable. Most examples seem to be approximately 5% ABV.</NOTES>
       <IBU_MIN>10.00000000</IBU_MIN>
       <CARB_MIN>0.00000000</CARB_MIN>
       <COLOR_MAX>4.00000000</COLOR_MAX>
-      <CATEGORY_NUMBER/>
+      <CATEGORY_NUMBER>16</CATEGORY_NUMBER>
     </STYLE>
   </RECIPE>
   <RECIPE>
@@ -690,18 +723,18 @@ Exact weight of the hops to be measured</NOTES>
   <RECIPE>
     <AGE>14</AGE>
     <FERMENTATION_STAGES>1</FERMENTATION_STAGES>
-    <BATCH_SIZE>3.785411834716797</BATCH_SIZE>
+    <BATCH_SIZE>3.7854117891320316</BATCH_SIZE>
     <SECONDARY_TEMP>21.0</SECONDARY_TEMP>
-    <TYPE>Partial Mash</TYPE>
-    <BOIL_SIZE>9.463529472830079</BOIL_SIZE>
+    <TYPE>Extract</TYPE>
+    <BOIL_SIZE>4.731764736415039</BOIL_SIZE>
     <TERTIARY_TEMP>21.0</TERTIARY_TEMP>
     <DISPLAY_OG>0.0</DISPLAY_OG>
-    <NAME>Vanilla Bourbon Porter (Barrell Aged)</NAME>
-    <FG>1.017</FG>
+    <NAME>Vanilla Bourbon Porter</NAME>
+    <FG>1.016</FG>
     <EQUIPMENT/>
     <SECONDARY_AGE>0</SECONDARY_AGE>
     <PRIMARY_AGE>14</PRIMARY_AGE>
-    <OG>1.073</OG>
+    <OG>1.067</OG>
     <VERSION>1</VERSION>
     <PRIMARY_TEMP>21.0</PRIMARY_TEMP>
     <NOTES>Results in higher ABV due to 50ml of 100 proof Bourbon and 10ml of 70 Proof Vanilla extract.
@@ -709,8 +742,8 @@ Exact weight of the hops to be measured</NOTES>
     <DISPLAY_FG>0.0</DISPLAY_FG>
     <BREWER/>
     <TERTIARY_AGE>0</TERTIARY_AGE>
-    <BOIL_TIME>60</BOIL_TIME>
-    <EFFICIENCY>75.0</EFFICIENCY>
+    <BOIL_TIME>45</BOIL_TIME>
+    <EFFICIENCY>100.0</EFFICIENCY>
     <HOPS>
       <HOP>
         <NAME>Chinook</NAME>
@@ -785,51 +818,51 @@ Exact weight of the hops to be measured</NOTES>
     <MISCS>
       <MISC>
         <AMOUNT_IS_WEIGHT>false</AMOUNT_IS_WEIGHT>
-        <AMOUNT>0.00000000</AMOUNT>
-        <USE_FOR/>
+        <AMOUNT>0.00985785</AMOUNT>
+        <USE_FOR>Secondary</USE_FOR>
         <TYPE>Misc</TYPE>
         <VERSION>1</VERSION>
-        <NOTES>50ml of Bourbon</NOTES>
-        <NAME>Bourbon</NAME>
-        <USE/>
-        <DISPLAY_AMOUNT>0.0 oz</DISPLAY_AMOUNT>
-        <DISPLAY_TIME>0 mins</DISPLAY_TIME>
-      </MISC>
-      <MISC>
-        <AMOUNT_IS_WEIGHT>false</AMOUNT_IS_WEIGHT>
-        <AMOUNT>0.00000000</AMOUNT>
-        <USE_FOR/>
-        <TYPE>Misc</TYPE>
-        <VERSION>1</VERSION>
-        <NOTES>After 2 weeks of fermentation, soaked in Bourbon.</NOTES>
-        <NAME>Oak Cubes</NAME>
-        <USE/>
-        <DISPLAY_AMOUNT>0.0 oz</DISPLAY_AMOUNT>
-        <DISPLAY_TIME>0 mins</DISPLAY_TIME>
-      </MISC>
-      <MISC>
-        <AMOUNT_IS_WEIGHT>false</AMOUNT_IS_WEIGHT>
-        <AMOUNT>0.00000000</AMOUNT>
-        <USE_FOR/>
-        <TYPE>Misc</TYPE>
-        <VERSION>1</VERSION>
-        <NOTES>2 tsp</NOTES>
+        <NOTES>Custom misc</NOTES>
         <NAME>Vanilla Extract</NAME>
-        <USE/>
-        <DISPLAY_AMOUNT>0.0 oz</DISPLAY_AMOUNT>
-        <DISPLAY_TIME>0 mins</DISPLAY_TIME>
+        <USE>Secondary</USE>
+        <DISPLAY_AMOUNT>1.9999999999999998 tsp</DISPLAY_AMOUNT>
+        <DISPLAY_TIME>15 days</DISPLAY_TIME>
+      </MISC>
+      <MISC>
+        <AMOUNT_IS_WEIGHT>false</AMOUNT_IS_WEIGHT>
+        <AMOUNT>0.01478675</AMOUNT>
+        <USE_FOR>Secondary</USE_FOR>
+        <TYPE>Misc</TYPE>
+        <VERSION>1</VERSION>
+        <NOTES>Custom misc</NOTES>
+        <NAME>Oak Cubes</NAME>
+        <USE>Secondary</USE>
+        <DISPLAY_AMOUNT>0.5 oz</DISPLAY_AMOUNT>
+        <DISPLAY_TIME>15 days</DISPLAY_TIME>
+      </MISC>
+      <MISC>
+        <AMOUNT_IS_WEIGHT>false</AMOUNT_IS_WEIGHT>
+        <AMOUNT>0.04436025</AMOUNT>
+        <USE_FOR>Secondary</USE_FOR>
+        <TYPE>Misc</TYPE>
+        <VERSION>1</VERSION>
+        <NOTES>Custom misc</NOTES>
+        <NAME>Bourbon</NAME>
+        <USE>Secondary</USE>
+        <DISPLAY_AMOUNT>1.5 oz</DISPLAY_AMOUNT>
+        <DISPLAY_TIME>15 days</DISPLAY_TIME>
       </MISC>
     </MISCS>
     <YEASTS>
       <YEAST>
-        <NAME>English Ale yeast</NAME>
+        <NAME>Safale S-04</NAME>
         <VERSION>0</VERSION>
         <TYPE>Yeast</TYPE>
-        <AMOUNT>0.0</AMOUNT>
-        <LABORATORY>Unknown lab</LABORATORY>
-        <PRODUCT_ID>Unknown ID</PRODUCT_ID>
-        <MIN_TEMPERATURE>0</MIN_TEMPERATURE>
-        <MAX_TEMPERATURE>0</MAX_TEMPERATURE>
+        <AMOUNT>0.05</AMOUNT>
+        <LABORATORY>Fermentis</LABORATORY>
+        <PRODUCT_ID>S-04</PRODUCT_ID>
+        <MIN_TEMPERATURE>17</MIN_TEMPERATURE>
+        <MAX_TEMPERATURE>17</MAX_TEMPERATURE>
         <ATTENUATION>75.0</ATTENUATION>
       </YEAST>
     </YEASTS>
@@ -848,29 +881,29 @@ Exact weight of the hops to be measured</NOTES>
       <MASH_STEPS/>
     </MASH>
     <STYLE>
-      <PROFILE/>
-      <ABV_MIN>0.00000000</ABV_MIN>
+      <PROFILE>Aroma: Roasty aroma (often with a lightly burnt, black malt character) should be noticeable and may be moderately strong. Optionally may also show some additional malt character in support (grainy, bready, toffee-like, caramelly, chocolate, coffee, rich, and/or sweet). Hop aroma low to high (US or UK varieties). Some American versions may be dry-hopped. Fruity esters are moderate to none. Diacetyl low to none. Appearance: Medium brown to very dark brown, often with ruby- or garnet-like highlights. Can approach black in color. Clarity may be difficult to discern in such a dark beer, but when not opaque will be clear (particularly when held up to the light). Full, tan-colored head with moderately good head retention. Flavor: Moderately strong malt flavor usually features a lightly burnt, black malt character (and sometimes chocolate and/or coffee flavors) with a bit of roasty dryness in the finish. Overall flavor may finish from dry to medium-sweet, depending on grist composition, hop bittering level, and attenuation. May have a sharp character from dark roasted grains, although should not be overly acrid, burnt or harsh. Medium to high bitterness, which can be accentuated by the roasted malt. Hop flavor can vary from low to moderately high (US or UK varieties, typically), and balances the roasted malt flavors. Diacetyl low to none. Fruity esters moderate to none. Mouthfeel: Medium to medium-full body. Moderately low to moderately high carbonation. Stronger versions may have a slight alcohol warmth. May have a slight astringency from roasted grains, although this character should not be strong.</PROFILE>
+      <ABV_MIN>4.80000000</ABV_MIN>
       <CARB_MAX>0.00000000</CARB_MAX>
-      <FG_MAX>1.02400000</FG_MAX>
-      <IBU_MAX>40.00000000</IBU_MAX>
-      <TYPE/>
-      <NAME>Baltic Porter</NAME>
-      <STYLE_GUIDE/>
-      <OG_MIN>1.06000000</OG_MIN>
-      <CATEGORY/>
-      <OG_MAX>1.09000000</OG_MAX>
-      <COLOR_MIN>17.00000000</COLOR_MIN>
-      <ABV_MAX>100.00000000</ABV_MAX>
-      <EXAMPLES/>
-      <INGREDIENTS/>
-      <FG_MIN>1.01600000</FG_MIN>
-      <STYLE_LETTER/>
+      <FG_MAX>1.01600000</FG_MAX>
+      <IBU_MAX>50.00000000</IBU_MAX>
+      <TYPE>Ale</TYPE>
+      <NAME>Robust Porter</NAME>
+      <STYLE_GUIDE>BJCP 2008</STYLE_GUIDE>
+      <OG_MIN>1.04800000</OG_MIN>
+      <CATEGORY>Porter</CATEGORY>
+      <OG_MAX>1.06500000</OG_MAX>
+      <COLOR_MIN>22.00000000</COLOR_MIN>
+      <ABV_MAX>6.50000000</ABV_MAX>
+      <EXAMPLES>Great Lakes Edmund Fitzgerald Porter, Meantime London Porter, Anchor Porter, Smuttynose Robust Porter, Sierra Nevada Porter, Deschutes Black Butte Porter, Boulevard Bully! Porter, Rogue Mocha Porter, Avery New World Porter, Bell’s Porter, Great Divide Saint Bridget’s Porter</EXAMPLES>
+      <INGREDIENTS>May contain several malts, prominently dark roasted malts and grains, which often include black patent malt (chocolate malt and/or roasted barley may also be used in some versions). Hops are used for bittering, flavor and/or aroma, and are frequently UK or US varieties. Water with moderate to high carbonate hardness is typical. Ale yeast can either be clean US versions or characterful English varieties.</INGREDIENTS>
+      <FG_MIN>1.01200000</FG_MIN>
+      <STYLE_LETTER>B</STYLE_LETTER>
       <VERSION>1</VERSION>
-      <NOTES/>
-      <IBU_MIN>20.00000000</IBU_MIN>
+      <NOTES>A substantial, malty dark ale with a complex and flavorful roasty character. Stronger, hoppier and/or roastier version of porter designed as either a historical throwback or an American interpretation of the style. Traditional versions will have a more subtle hop character (often English), while modern versions may be considerably more aggressive. Both types are equally valid. Although a rather broad style open to brewer interpretation, it may be distinguished from Stout as lacking a strong roasted barley character. It differs from a brown porter in that a black patent or roasted grain character is usually present, and it can be stronger in alcohol. Roast intensity and malt flavors can also vary significantly. May or may not have a strong hop character, and may or may not have significant fermentation by-products; thus may seem to have an “American” or “English” character.</NOTES>
+      <IBU_MIN>25.00000000</IBU_MIN>
       <CARB_MIN>0.00000000</CARB_MIN>
-      <COLOR_MAX>30.00000000</COLOR_MAX>
-      <CATEGORY_NUMBER/>
+      <COLOR_MAX>35.00000000</COLOR_MAX>
+      <CATEGORY_NUMBER>12</CATEGORY_NUMBER>
     </STYLE>
   </RECIPE>
   <RECIPE>
@@ -1094,7 +1127,7 @@ Exact weight of the hops to be measured</NOTES>
     <BATCH_SIZE>4.731764736415039</BATCH_SIZE>
     <SECONDARY_TEMP>21.0</SECONDARY_TEMP>
     <TYPE>Partial Mash</TYPE>
-    <BOIL_SIZE>5.678117683698047</BOIL_SIZE>
+    <BOIL_SIZE>6.624470630981055</BOIL_SIZE>
     <TERTIARY_TEMP>21.0</TERTIARY_TEMP>
     <DISPLAY_OG>0.0</DISPLAY_OG>
     <NAME>Double Chocolate Milk Stout</NAME>
@@ -1220,7 +1253,32 @@ Exact weight of the hops to be measured</NOTES>
         <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
       </FERMENTABLE>
     </FERMENTABLES>
-    <MISCS/>
+    <MISCS>
+      <MISC>
+        <AMOUNT_IS_WEIGHT>false</AMOUNT_IS_WEIGHT>
+        <AMOUNT>0.02957350</AMOUNT>
+        <USE_FOR>Boil</USE_FOR>
+        <TYPE>Misc</TYPE>
+        <VERSION>1</VERSION>
+        <NOTES>Custom misc</NOTES>
+        <NAME>Chocolate Bittersweet</NAME>
+        <USE>Boil</USE>
+        <DISPLAY_AMOUNT>1.0 oz</DISPLAY_AMOUNT>
+        <DISPLAY_TIME>10 mins</DISPLAY_TIME>
+      </MISC>
+      <MISC>
+        <AMOUNT_IS_WEIGHT>false</AMOUNT_IS_WEIGHT>
+        <AMOUNT>0.02957350</AMOUNT>
+        <USE_FOR>Boil</USE_FOR>
+        <TYPE>Misc</TYPE>
+        <VERSION>1</VERSION>
+        <NOTES>Custom misc</NOTES>
+        <NAME>Cacao Nibs</NAME>
+        <USE>Secondary</USE>
+        <DISPLAY_AMOUNT>1.0 oz</DISPLAY_AMOUNT>
+        <DISPLAY_TIME>15 days</DISPLAY_TIME>
+      </MISC>
+    </MISCS>
     <YEASTS>
       <YEAST>
         <NAME>Safale US-05</NAME>
@@ -1250,7 +1308,7 @@ Exact weight of the hops to be measured</NOTES>
         <MASH_STEP>
           <RAMP_TIME>10.00000000</RAMP_TIME>
           <STEP_TEMP>68.90000000</STEP_TEMP>
-          <INFUSE_AMOUNT>6.14079086</INFUSE_AMOUNT>
+          <INFUSE_AMOUNT>7.08714381</INFUSE_AMOUNT>
           <END_TIME>68.90000000</END_TIME>
           <STEP_TIME>60.00000000</STEP_TIME>
           <TYPE>Infusion</TYPE>
@@ -1478,10 +1536,10 @@ Exact weight of the hops to be measured</NOTES>
   <RECIPE>
     <AGE>14</AGE>
     <FERMENTATION_STAGES>1</FERMENTATION_STAGES>
-    <BATCH_SIZE>4.731764793395996</BATCH_SIZE>
+    <BATCH_SIZE>4.731764736415039</BATCH_SIZE>
     <SECONDARY_TEMP>21.0</SECONDARY_TEMP>
-    <TYPE>All Grain</TYPE>
-    <BOIL_SIZE>9.463529472830079</BOIL_SIZE>
+    <TYPE>Partial Mash</TYPE>
+    <BOIL_SIZE>6.624470630981055</BOIL_SIZE>
     <TERTIARY_TEMP>21.0</TERTIARY_TEMP>
     <DISPLAY_OG>0.0</DISPLAY_OG>
     <NAME>German Red Ale</NAME>
@@ -1605,42 +1663,63 @@ Exact weight of the hops to be measured</NOTES>
     </YEASTS>
     <WATERS/>
     <MASH>
-      <TUN_WEIGHT>0.00000000</TUN_WEIGHT>
-      <GRAIN_TEMP>20.00000000</GRAIN_TEMP>
+      <TUN_WEIGHT>160.00000000</TUN_WEIGHT>
+      <GRAIN_TEMP>22.22222220</GRAIN_TEMP>
       <VERSION>1</VERSION>
-      <NAME>New Mash Profile</NAME>
-      <NOTES/>
-      <TUN_SPECIFIC_HEAT>0.00000000</TUN_SPECIFIC_HEAT>
+      <NAME>BIAB, Medium Body</NAME>
+      <NOTES>Brew in a bag method where the full boil volume is mashed within the boil vessel and then the grains are withdrawn at the end of the mash.  No active sparging is required.  This is a medium body beer profile.</NOTES>
+      <TUN_SPECIFIC_HEAT>0.30000000</TUN_SPECIFIC_HEAT>
       <EQUIP_ADJUST>FALSE</EQUIP_ADJUST>
-      <TUN_TEMP>20.00000000</TUN_TEMP>
-      <SPARGE_TEMP>75.55550000</SPARGE_TEMP>
-      <PH>7.00000000</PH>
-      <MASH_STEPS/>
+      <TUN_TEMP>22.22222220</TUN_TEMP>
+      <SPARGE_TEMP>75.60000000</SPARGE_TEMP>
+      <PH>5.20000000</PH>
+      <MASH_STEPS>
+        <MASH_STEP>
+          <RAMP_TIME>10.00000000</RAMP_TIME>
+          <STEP_TEMP>66.70000000</STEP_TEMP>
+          <INFUSE_AMOUNT>7.06672318</INFUSE_AMOUNT>
+          <END_TIME>66.70000000</END_TIME>
+          <STEP_TIME>75.00000000</STEP_TIME>
+          <TYPE>Infusion</TYPE>
+          <VERSION>1</VERSION>
+          <NAME>Saccharification</NAME>
+        </MASH_STEP>
+        <MASH_STEP>
+          <RAMP_TIME>7.00000000</RAMP_TIME>
+          <STEP_TEMP>75.55555560</STEP_TEMP>
+          <INFUSE_AMOUNT>0.00000000</INFUSE_AMOUNT>
+          <END_TIME>75.55555560</END_TIME>
+          <STEP_TIME>10.00000000</STEP_TIME>
+          <TYPE>Temperature</TYPE>
+          <VERSION>1</VERSION>
+          <NAME>Mash Out</NAME>
+        </MASH_STEP>
+      </MASH_STEPS>
     </MASH>
     <STYLE>
-      <PROFILE/>
-      <ABV_MIN>0.00000000</ABV_MIN>
+      <PROFILE>Aroma: Low to moderate hop aroma from dry hopping or late kettle additions of American hop varieties. A citrusy hop character is common, but not required. Moderately low to moderately high maltiness balances and sometimes masks the hop presentation, and usually shows a moderate caramel character. Esters vary from moderate to none. No diacetyl. Appearance: Amber to coppery brown in color. Moderately large off-white head with good retention. Generally quite clear, although dry-hopped versions may be slightly hazy. Flavor: Moderate to high hop flavor from American hop varieties, which often but not always has a citrusy quality. Malt flavors are moderate to strong, and usually show an initial malty sweetness followed by a moderate caramel flavor (and sometimes other character malts in lesser amounts). Malt and hop bitterness are usually balanced and mutually supportive. Fruity esters can be moderate to none. Caramel sweetness and hop flavor/bitterness can linger somewhat into the medium to full finish. No diacetyl. Mouthfeel: Medium to medium-full body. Carbonation moderate to high. Overall smooth finish without astringency often associated with high hopping rates. Stronger versions may have a slight alcohol warmth.</PROFILE>
+      <ABV_MIN>4.50000000</ABV_MIN>
       <CARB_MAX>0.00000000</CARB_MAX>
       <FG_MAX>1.01500000</FG_MAX>
       <IBU_MAX>40.00000000</IBU_MAX>
-      <TYPE/>
+      <TYPE>Ale</TYPE>
       <NAME>American Amber Ale</NAME>
-      <STYLE_GUIDE/>
+      <STYLE_GUIDE>BJCP 2008</STYLE_GUIDE>
       <OG_MIN>1.04500000</OG_MIN>
-      <CATEGORY/>
+      <CATEGORY>American Ale</CATEGORY>
       <OG_MAX>1.06000000</OG_MAX>
       <COLOR_MIN>10.00000000</COLOR_MIN>
-      <ABV_MAX>100.00000000</ABV_MAX>
-      <EXAMPLES/>
-      <INGREDIENTS/>
+      <ABV_MAX>6.20000000</ABV_MAX>
+      <EXAMPLES>North Coast Red Seal Ale, Troegs HopBack Amber Ale, Deschutes Cinder Cone Red, Pyramid Broken Rake, St. Rogue Red Ale, Anderson Valley Boont Amber Ale, Lagunitas Censored Ale, Avery Redpoint Ale, McNeill's Firehouse Amber Ale, Mendocino Red Tail Ale, Bell's Amber</EXAMPLES>
+      <INGREDIENTS>Pale ale malt, typically American two-row. Medium to dark crystal malts. May contain specialty grains which add character and uniqueness. American hops, often with citrusy flavors, are common but others may also be used. Water can vary in sulfate &amp; carbonate content.</INGREDIENTS>
       <FG_MIN>1.01000000</FG_MIN>
-      <STYLE_LETTER/>
+      <STYLE_LETTER>B</STYLE_LETTER>
       <VERSION>1</VERSION>
-      <NOTES/>
+      <NOTES>Like an American pale ale with more body, more caramel richness, and a balance more towards malt than hops (although hop rates can be significant). Known simply as Red Ales in some regions, these beers were popularized in the hop-loving Northern California and the Pacific Northwest areas before spreading nationwide. Can overlap in color with American pale ales. However, American amber ales differ from American pale ales not only by being usually darker in color, but also by having more caramel flavor, more body, and usually being balanced more evenly between malt and bitterness. Should not have a strong chocolate or roast character that might suggest an American brown ale (although small amounts are OK).</NOTES>
       <IBU_MIN>25.00000000</IBU_MIN>
       <CARB_MIN>0.00000000</CARB_MIN>
       <COLOR_MAX>17.00000000</COLOR_MAX>
-      <CATEGORY_NUMBER/>
+      <CATEGORY_NUMBER>10</CATEGORY_NUMBER>
     </STYLE>
   </RECIPE>
   <RECIPE>
@@ -2417,137 +2496,6 @@ Hungarian oaks</NOTES>
   <RECIPE>
     <AGE>14</AGE>
     <FERMENTATION_STAGES>1</FERMENTATION_STAGES>
-    <BATCH_SIZE>4.731764793395996</BATCH_SIZE>
-    <SECONDARY_TEMP>21.0</SECONDARY_TEMP>
-    <TYPE>Partial Mash</TYPE>
-    <BOIL_SIZE>9.463529472830079</BOIL_SIZE>
-    <TERTIARY_TEMP>21.0</TERTIARY_TEMP>
-    <DISPLAY_OG>0.0</DISPLAY_OG>
-    <NAME>Kitchen Sink Stout</NAME>
-    <FG>1.053</FG>
-    <EQUIPMENT/>
-    <SECONDARY_AGE>0</SECONDARY_AGE>
-    <PRIMARY_AGE>14</PRIMARY_AGE>
-    <OG>1.053</OG>
-    <VERSION>1</VERSION>
-    <PRIMARY_TEMP>21.0</PRIMARY_TEMP>
-    <NOTES/>
-    <DISPLAY_FG>0.0</DISPLAY_FG>
-    <BREWER/>
-    <TERTIARY_AGE>0</TERTIARY_AGE>
-    <BOIL_TIME>60</BOIL_TIME>
-    <EFFICIENCY>75.0</EFFICIENCY>
-    <HOPS/>
-    <FERMENTABLES>
-      <FERMENTABLE>
-        <NAME>Wheat DME</NAME>
-        <VERSION>0</VERSION>
-        <TYPE>Extract</TYPE>
-        <AMOUNT>0.27215542</AMOUNT>
-        <YIELD>80.06000000000016</YIELD>
-        <COLOR>3.0</COLOR>
-        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
-      </FERMENTABLE>
-      <FERMENTABLE>
-        <NAME>Barley, Flaked</NAME>
-        <VERSION>0</VERSION>
-        <TYPE>Grain</TYPE>
-        <AMOUNT>0.15875733</AMOUNT>
-        <YIELD>69.23999999999988</YIELD>
-        <COLOR>1.7000000476837158</COLOR>
-        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
-      </FERMENTABLE>
-      <FERMENTABLE>
-        <NAME>Pilsen DME</NAME>
-        <VERSION>0</VERSION>
-        <TYPE>Extract</TYPE>
-        <AMOUNT>0.15875733</AMOUNT>
-        <YIELD>90.87999999999992</YIELD>
-        <COLOR>1.899999976158142</COLOR>
-        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
-      </FERMENTABLE>
-      <FERMENTABLE>
-        <NAME>Two-row (US)</NAME>
-        <VERSION>0</VERSION>
-        <TYPE>Grain</TYPE>
-        <AMOUNT>0.13607771</AMOUNT>
-        <YIELD>80.06000000000016</YIELD>
-        <COLOR>1.7999999523162842</COLOR>
-        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
-      </FERMENTABLE>
-      <FERMENTABLE>
-        <NAME>Carafa Special III</NAME>
-        <VERSION>0</VERSION>
-        <TYPE>Grain</TYPE>
-        <AMOUNT>0.09071847</AMOUNT>
-        <YIELD>77.89999999999982</YIELD>
-        <COLOR>500.0</COLOR>
-        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
-      </FERMENTABLE>
-      <FERMENTABLE>
-        <NAME>Roasted Barley</NAME>
-        <VERSION>0</VERSION>
-        <TYPE>Grain</TYPE>
-        <AMOUNT>0.09071847</AMOUNT>
-        <YIELD>60.589999999999975</YIELD>
-        <COLOR>300.0</COLOR>
-        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
-      </FERMENTABLE>
-      <FERMENTABLE>
-        <NAME>Biscuit (Belgian)</NAME>
-        <VERSION>0</VERSION>
-        <TYPE>Grain</TYPE>
-        <AMOUNT>0.06803886</AMOUNT>
-        <YIELD>75.72999999999993</YIELD>
-        <COLOR>24.0</COLOR>
-        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
-      </FERMENTABLE>
-    </FERMENTABLES>
-    <MISCS/>
-    <YEASTS/>
-    <WATERS/>
-    <MASH>
-      <TUN_WEIGHT>0.00000000</TUN_WEIGHT>
-      <GRAIN_TEMP>20.00000000</GRAIN_TEMP>
-      <VERSION>1</VERSION>
-      <NAME>New Mash Profile</NAME>
-      <NOTES/>
-      <TUN_SPECIFIC_HEAT>0.00000000</TUN_SPECIFIC_HEAT>
-      <EQUIP_ADJUST>FALSE</EQUIP_ADJUST>
-      <TUN_TEMP>20.00000000</TUN_TEMP>
-      <SPARGE_TEMP>75.55550000</SPARGE_TEMP>
-      <PH>7.00000000</PH>
-      <MASH_STEPS/>
-    </MASH>
-    <STYLE>
-      <PROFILE/>
-      <ABV_MIN>0.00000000</ABV_MIN>
-      <CARB_MAX>0.00000000</CARB_MAX>
-      <FG_MAX>1.02200000</FG_MAX>
-      <IBU_MAX>75.00000000</IBU_MAX>
-      <TYPE/>
-      <NAME>American Stout</NAME>
-      <STYLE_GUIDE/>
-      <OG_MIN>1.05000000</OG_MIN>
-      <CATEGORY/>
-      <OG_MAX>1.07500000</OG_MAX>
-      <COLOR_MIN>30.00000000</COLOR_MIN>
-      <ABV_MAX>100.00000000</ABV_MAX>
-      <EXAMPLES/>
-      <INGREDIENTS/>
-      <FG_MIN>1.01000000</FG_MIN>
-      <STYLE_LETTER/>
-      <VERSION>1</VERSION>
-      <NOTES/>
-      <IBU_MIN>35.00000000</IBU_MIN>
-      <CARB_MIN>0.00000000</CARB_MIN>
-      <COLOR_MAX>40.00000000</COLOR_MAX>
-      <CATEGORY_NUMBER/>
-    </STYLE>
-  </RECIPE>
-  <RECIPE>
-    <AGE>14</AGE>
-    <FERMENTATION_STAGES>1</FERMENTATION_STAGES>
     <BATCH_SIZE>4.731764736415039</BATCH_SIZE>
     <SECONDARY_TEMP>21.0</SECONDARY_TEMP>
     <TYPE>Partial Mash</TYPE>
@@ -2762,7 +2710,7 @@ Hungarian oaks</NOTES>
     <BATCH_SIZE>4.731764736415039</BATCH_SIZE>
     <SECONDARY_TEMP>21.0</SECONDARY_TEMP>
     <TYPE>Partial Mash</TYPE>
-    <BOIL_SIZE>5.678117683698047</BOIL_SIZE>
+    <BOIL_SIZE>6.624470630981055</BOIL_SIZE>
     <TERTIARY_TEMP>21.0</TERTIARY_TEMP>
     <DISPLAY_OG>0.0</DISPLAY_OG>
     <NAME>Spiced Saison</NAME>
@@ -2939,7 +2887,7 @@ Hungarian oaks</NOTES>
         <MASH_STEP>
           <RAMP_TIME>10.00000000</RAMP_TIME>
           <STEP_TEMP>64.40000000</STEP_TEMP>
-          <INFUSE_AMOUNT>5.93332266</INFUSE_AMOUNT>
+          <INFUSE_AMOUNT>6.87967561</INFUSE_AMOUNT>
           <END_TIME>64.40000000</END_TIME>
           <STEP_TIME>90.00000000</STEP_TIME>
           <TYPE>Infusion</TYPE>
@@ -3497,6 +3445,393 @@ Hungarian oaks</NOTES>
       <CARB_MIN>0.00000000</CARB_MIN>
       <COLOR_MAX>40.00000000</COLOR_MAX>
       <CATEGORY_NUMBER>13</CATEGORY_NUMBER>
+    </STYLE>
+  </RECIPE>
+  <RECIPE>
+    <AGE>14</AGE>
+    <FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+    <BATCH_SIZE>3.7854117891320316</BATCH_SIZE>
+    <SECONDARY_TEMP>21.0</SECONDARY_TEMP>
+    <TYPE>Extract</TYPE>
+    <BOIL_SIZE>4.731764736415039</BOIL_SIZE>
+    <TERTIARY_TEMP>21.0</TERTIARY_TEMP>
+    <DISPLAY_OG>0.0</DISPLAY_OG>
+    <NAME>Rum Runner Stout</NAME>
+    <FG>1.022</FG>
+    <EQUIPMENT/>
+    <SECONDARY_AGE>0</SECONDARY_AGE>
+    <PRIMARY_AGE>14</PRIMARY_AGE>
+    <OG>1.091</OG>
+    <VERSION>1</VERSION>
+    <PRIMARY_TEMP>21.0</PRIMARY_TEMP>
+    <NOTES/>
+    <DISPLAY_FG>0.0</DISPLAY_FG>
+    <BREWER/>
+    <TERTIARY_AGE>0</TERTIARY_AGE>
+    <BOIL_TIME>45</BOIL_TIME>
+    <EFFICIENCY>100.0</EFFICIENCY>
+    <HOPS>
+      <HOP>
+        <NAME>Chinook</NAME>
+        <VERSION>0</VERSION>
+        <ALPHA>13.0</ALPHA>
+        <AMOUNT>0.014174761582423775</AMOUNT>
+        <USE>Boil</USE>
+        <TIME>45</TIME>
+        <NOTES>Strong bittering hop. Heavy and spicy. Used for: Ales, porters, stouts</NOTES>
+        <TYPE>Hop</TYPE>
+        <FORM>Pellet</FORM>
+      </HOP>
+    </HOPS>
+    <FERMENTABLES>
+      <FERMENTABLE>
+        <NAME>Special B Malt</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Grain</TYPE>
+        <AMOUNT>0.11343012704174228</AMOUNT>
+        <YIELD>65.21739130434788</YIELD>
+        <COLOR>180.0</COLOR>
+        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
+      </FERMENTABLE>
+      <FERMENTABLE>
+        <NAME>Roasted Barley</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Grain</TYPE>
+        <AMOUNT>0.05671506352087114</AMOUNT>
+        <YIELD>54.347826086956324</YIELD>
+        <COLOR>300.0</COLOR>
+        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
+      </FERMENTABLE>
+      <FERMENTABLE>
+        <NAME>Dark Dry Extract</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Extract</TYPE>
+        <AMOUNT>0.9074410163339383</AMOUNT>
+        <YIELD>95.65217391304358</YIELD>
+        <COLOR>17.5</COLOR>
+        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
+      </FERMENTABLE>
+    </FERMENTABLES>
+    <MISCS>
+      <MISC>
+        <AMOUNT_IS_WEIGHT>false</AMOUNT_IS_WEIGHT>
+        <AMOUNT>0.04436025</AMOUNT>
+        <USE_FOR>Secondary</USE_FOR>
+        <TYPE>Misc</TYPE>
+        <VERSION>1</VERSION>
+        <NOTES>Custom misc</NOTES>
+        <NAME>Rum</NAME>
+        <USE>Secondary</USE>
+        <DISPLAY_AMOUNT>1.5 oz</DISPLAY_AMOUNT>
+        <DISPLAY_TIME>15 days</DISPLAY_TIME>
+      </MISC>
+    </MISCS>
+    <YEASTS>
+      <YEAST>
+        <NAME>Safale S-04</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Yeast</TYPE>
+        <AMOUNT>0.05</AMOUNT>
+        <LABORATORY>Fermentis</LABORATORY>
+        <PRODUCT_ID>S-04</PRODUCT_ID>
+        <MIN_TEMPERATURE>17</MIN_TEMPERATURE>
+        <MAX_TEMPERATURE>17</MAX_TEMPERATURE>
+        <ATTENUATION>75.0</ATTENUATION>
+      </YEAST>
+    </YEASTS>
+    <WATERS/>
+    <MASH>
+      <TUN_WEIGHT>0.00000000</TUN_WEIGHT>
+      <GRAIN_TEMP>20.00000000</GRAIN_TEMP>
+      <VERSION>1</VERSION>
+      <NAME>New Mash Profile</NAME>
+      <NOTES/>
+      <TUN_SPECIFIC_HEAT>0.00000000</TUN_SPECIFIC_HEAT>
+      <EQUIP_ADJUST>FALSE</EQUIP_ADJUST>
+      <TUN_TEMP>20.00000000</TUN_TEMP>
+      <SPARGE_TEMP>75.55550000</SPARGE_TEMP>
+      <PH>7.00000000</PH>
+      <MASH_STEPS/>
+    </MASH>
+    <STYLE>
+      <PROFILE>Aroma: Rich and complex, with variable amounts of roasted grains, maltiness, fruity esters, hops, and alcohol. The roasted malt character can take on coffee, dark chocolate, or slightly burnt tones and can be light to moderately strong. The malt aroma can be subtle to rich and barleywine-like, depending on the gravity and grain bill. May optionally show a slight specialty malt character (e.g., caramel), but this should only add complexity and not dominate. Fruity esters may be low to moderately strong, and may take on a complex, dark fruit (e.g., plums, prunes, raisins) character. Hop aroma can be very low to quite aggressive, and may contain any hop variety. An alcohol character may be present, but shouldn’t be sharp, hot or solventy. Aged versions may have a slight vinous or portlike quality, but shouldn’t be sour. No diacetyl. The balance can vary with any of the aroma elements taking center stage. Not all possible aromas described need be present; many interpretations are possible. Aging affects the intensity, balance and smoothness of aromatics. Appearance: Color may range from very dark reddish-brown to jet black. Opaque. Deep tan to dark brown head. Generally has a well-formed head, although head retention may be low to moderate. High alcohol and viscosity may be visible in “legs” when beer is swirled in a glass. Flavor: Rich, deep, complex and frequently quite intense, with variable amounts of roasted malt/grains, maltiness, fruity esters, hop bitterness and flavor, and alcohol. Medium to aggressively high bitterness. Medium-low to high hop flavor (any variety). Moderate to aggressively high roasted malt/grain flavors can suggest bittersweet or unsweetened chocolate, cocoa, and/or strong coffee. A slightly burnt grain, burnt currant or tarry character may be evident. Fruity esters may be low to intense, and can take on a dark fruit character (raisins, plums, or prunes). Malt backbone can be balanced and supportive to rich and barleywine-like, and may optionally show some supporting caramel, bready or toasty flavors. Alcohol strength should be evident, but not hot, sharp, or solventy. No diacetyl. The palate and finish can vary from relatively dry to moderately sweet, usually with some lingering roastiness, hop bitterness and warming character. The balance and intensity of flavors can be affected by aging, with some flavors becoming more subdued over time and some aged, vinous or port-like qualities developing. Mouthfeel: Full to very full-bodied and chewy, with a velvety, luscious texture (although the body may decline with long conditioning). Gentle smooth warmth from alcohol should be present and noticeable. Should not be syrupy and underattenuated. Carbonation may be low to moderate, depending on age and conditioning.</PROFILE>
+      <ABV_MIN>8.00000000</ABV_MIN>
+      <CARB_MAX>0.00000000</CARB_MAX>
+      <FG_MAX>1.03000000</FG_MAX>
+      <IBU_MAX>90.00000000</IBU_MAX>
+      <TYPE>Ale</TYPE>
+      <NAME>Imperial Stout</NAME>
+      <STYLE_GUIDE>BJCP 2008</STYLE_GUIDE>
+      <OG_MIN>1.07500000</OG_MIN>
+      <CATEGORY>Stout</CATEGORY>
+      <OG_MAX>1.11500000</OG_MAX>
+      <COLOR_MIN>30.00000000</COLOR_MIN>
+      <ABV_MAX>12.00000000</ABV_MAX>
+      <EXAMPLES>Three Floyd’s Dark Lord, Bell’s Expedition Stout, North Coast Old Rasputin Imperial Stout, Stone Imperial Stout, Samuel Smith Imperial Stout, Scotch Irish Tsarina Katarina Imperial Stout, Thirsty Dog Siberian Night, Deschutes The Abyss, Great Divide Yeti, Southampton Russian Imperial Stout, Rogue Imperial Stout, Bear Republic Big Bear Black Stout, Great Lakes Blackout Stout, Avery The Czar, Founders Imperial Stout, Victory Storm King, Brooklyn Black Chocolate Stout</EXAMPLES>
+      <INGREDIENTS>Well-modified pale malt, with generous quantities of roasted malts and/or grain. May have a complex grain bill using virtually any variety of malt. Any type of hops may be used. Alkaline water balances the abundance of acidic roasted grain in the grist. American or English ale yeast.</INGREDIENTS>
+      <FG_MIN>1.01800000</FG_MIN>
+      <STYLE_LETTER>F</STYLE_LETTER>
+      <VERSION>1</VERSION>
+      <NOTES>An intensely flavored, big, dark ale. Roasty, fruity, and bittersweet, with a noticeable alcohol presence. Dark fruit flavors meld with roasty, burnt, or almost tarlike sensations. Like a black barleywine with every dimension of flavor coming into play. Brewed to high gravity and hopping level in England for export to the Baltic States and Russia. Said to be popular with the Russian Imperial Court. Today is even more popular with American craft brewers, who have extended the style with unique American characteristics. Variations exist, with English and American interpretations (predictably, the American versions have more bitterness, roasted character, and finishing hops, while the English varieties reflect a more complex specialty malt character and a more forward ester profile). The wide range of allowable characteristics allow for maximum brewer creativity.</NOTES>
+      <IBU_MIN>50.00000000</IBU_MIN>
+      <CARB_MIN>0.00000000</CARB_MIN>
+      <COLOR_MAX>40.00000000</COLOR_MAX>
+      <CATEGORY_NUMBER>13</CATEGORY_NUMBER>
+    </STYLE>
+  </RECIPE>
+  <RECIPE>
+    <AGE>14</AGE>
+    <FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+    <BATCH_SIZE>3.7854117891320316</BATCH_SIZE>
+    <SECONDARY_TEMP>21.0</SECONDARY_TEMP>
+    <TYPE>Extract</TYPE>
+    <BOIL_SIZE>4.731764736415039</BOIL_SIZE>
+    <TERTIARY_TEMP>21.0</TERTIARY_TEMP>
+    <DISPLAY_OG>0.0</DISPLAY_OG>
+    <NAME>Orange Hefweizen</NAME>
+    <FG>1.005</FG>
+    <EQUIPMENT/>
+    <SECONDARY_AGE>0</SECONDARY_AGE>
+    <PRIMARY_AGE>14</PRIMARY_AGE>
+    <OG>1.044</OG>
+    <VERSION>1</VERSION>
+    <PRIMARY_TEMP>21.0</PRIMARY_TEMP>
+    <NOTES/>
+    <DISPLAY_FG>0.0</DISPLAY_FG>
+    <BREWER/>
+    <TERTIARY_AGE>0</TERTIARY_AGE>
+    <BOIL_TIME>45</BOIL_TIME>
+    <EFFICIENCY>100.0</EFFICIENCY>
+    <HOPS>
+      <HOP>
+        <NAME>Perle</NAME>
+        <VERSION>0</VERSION>
+        <ALPHA>8.0</ALPHA>
+        <AMOUNT>0.003543690395605944</AMOUNT>
+        <USE>Boil</USE>
+        <TIME>30</TIME>
+        <NOTES>Slightly spicy, minty. Used for: US and German Ales and Lagers.</NOTES>
+        <TYPE>Hop</TYPE>
+        <FORM>Pellet</FORM>
+      </HOP>
+    </HOPS>
+    <FERMENTABLES>
+      <FERMENTABLE>
+        <NAME>Wheat Dry Extract</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Extract</TYPE>
+        <AMOUNT>0.4537205081669691</AMOUNT>
+        <YIELD>95.65217391304358</YIELD>
+        <COLOR>8.0</COLOR>
+        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
+      </FERMENTABLE>
+    </FERMENTABLES>
+    <MISCS>
+      <MISC>
+        <AMOUNT_IS_WEIGHT>false</AMOUNT_IS_WEIGHT>
+        <AMOUNT>0.00591470</AMOUNT>
+        <USE_FOR>Sweet orange flavor</USE_FOR>
+        <TYPE>Misc</TYPE>
+        <VERSION>1</VERSION>
+        <NOTES>Adds a sweet flavor and aroma, reminiscent of Grand Marnier.</NOTES>
+        <NAME>Orange Peel, Sweet</NAME>
+        <USE>Boil</USE>
+        <DISPLAY_AMOUNT>0.2 oz</DISPLAY_AMOUNT>
+        <DISPLAY_TIME>10 mins</DISPLAY_TIME>
+      </MISC>
+    </MISCS>
+    <YEASTS>
+      <YEAST>
+        <NAME>Safbrew WB-06</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Yeast</TYPE>
+        <AMOUNT>0.05</AMOUNT>
+        <LABORATORY>Fermentis</LABORATORY>
+        <PRODUCT_ID>WB-06</PRODUCT_ID>
+        <MIN_TEMPERATURE>21</MIN_TEMPERATURE>
+        <MAX_TEMPERATURE>21</MAX_TEMPERATURE>
+        <ATTENUATION>86.0</ATTENUATION>
+      </YEAST>
+    </YEASTS>
+    <WATERS/>
+    <MASH>
+      <TUN_WEIGHT>0.00000000</TUN_WEIGHT>
+      <GRAIN_TEMP>20.00000000</GRAIN_TEMP>
+      <VERSION>1</VERSION>
+      <NAME>New Mash Profile</NAME>
+      <NOTES/>
+      <TUN_SPECIFIC_HEAT>0.00000000</TUN_SPECIFIC_HEAT>
+      <EQUIP_ADJUST>FALSE</EQUIP_ADJUST>
+      <TUN_TEMP>20.00000000</TUN_TEMP>
+      <SPARGE_TEMP>75.55550000</SPARGE_TEMP>
+      <PH>7.00000000</PH>
+      <MASH_STEPS/>
+    </MASH>
+    <STYLE>
+      <PROFILE>Aroma: Moderate to strong phenols (usually clove) and fruity esters (usually banana). The balance and intensity of the phenol and ester components can vary but the best examples are reasonably balanced and fairly prominent. Noble hop character ranges from low to none. A light to moderate wheat aroma (which might be perceived as bready or grainy) may be present but other malt characteristics should not. No diacetyl or DMS. Optional, but acceptable, aromatics can include a light, citrusy tartness, a light to moderate vanilla character, and/or a low bubblegum aroma. None of these optional characteristics should be high or dominant, but often can add to the complexity and balance. Appearance: Pale straw to very dark gold in color. A very thick, moussy, long-lasting white head is characteristic. The high protein content of wheat impairs clarity in an unfiltered beer, although the level of haze is somewhat variable. A beer “mit hefe” is also cloudy from suspended yeast sediment (which should be roused before drinking). The filtered Krystal version has no yeast and is brilliantly clear. Flavor: Low to moderately strong banana and clove flavor. The balance and intensity of the phenol and ester components can vary but the best examples are reasonably balanced and fairly prominent. Optionally, a very light to moderate vanilla character and/or low bubblegum notes can accentuate the banana flavor, sweetness and roundness; neither should be dominant if present. The soft, somewhat bready or grainy flavor of wheat is complementary, as is a slightly sweet Pils malt character. Hop flavor is very low to none, and hop bitterness is very low to moderately low. A tart, citrusy character from yeast and high carbonation is often present. Well rounded, flavorful palate with a relatively dry finish. No diacetyl or DMS. Mouthfeel: Medium-light to medium body; never heavy. Suspended yeast may increase the perception of body. The texture of wheat imparts the sensation of a fluffy, creamy fullness that may progress to a light, spritzy finish aided by high carbonation. Always effervescent.</PROFILE>
+      <ABV_MIN>4.30000000</ABV_MIN>
+      <CARB_MAX>0.00000000</CARB_MAX>
+      <FG_MAX>1.01400000</FG_MAX>
+      <IBU_MAX>15.00000000</IBU_MAX>
+      <TYPE>Ale</TYPE>
+      <NAME>Weizen/Weissbier</NAME>
+      <STYLE_GUIDE>BJCP 2008</STYLE_GUIDE>
+      <OG_MIN>1.04400000</OG_MIN>
+      <CATEGORY>German Wheat and Rye Beer</CATEGORY>
+      <OG_MAX>1.05200000</OG_MAX>
+      <COLOR_MIN>2.00000000</COLOR_MIN>
+      <ABV_MAX>5.60000000</ABV_MAX>
+      <EXAMPLES>Weihenstephaner Hefeweissbier, Schneider Weisse Weizenhell, Paulaner Hefe-Weizen, Hacker-Pschorr Weisse, Plank Bavarian Hefeweizen, Ayinger Brau Weisse, Ettaler Weissbier Hell, Franziskaner Hefe-Weisse, Andechser Weissbier Hefetrub, Kapuziner Weissbier, Erdinger Weissbier, Penn Weizen, Barrelhouse Hocking Hills Hefe-Weizen, Eisenbahn Weizenbier</EXAMPLES>
+      <INGREDIENTS>By German law, at least 50% of the grist must be malted wheat, although some versions use up to 70%; the remainder is Pilsner malt. A traditional decoction mash gives the appropriate body without cloying sweetness. Weizen ale yeasts produce the typical spicy and fruity character, although extreme fermentation temperatures can affect the balance and produce off-flavors. A small amount of noble hops are used only for bitterness.</INGREDIENTS>
+      <FG_MIN>1.01000000</FG_MIN>
+      <STYLE_LETTER>A</STYLE_LETTER>
+      <VERSION>1</VERSION>
+      <NOTES>A pale, spicy, fruity, refreshing wheatbased ale. A traditional wheat-based ale originating in Southern Germany that is a specialty for summer consumption, but generally produced year-round. These are refreshing, fast-maturing beers that are lightly hopped and show a unique banana-and-clove yeast character. These beers often don’t age well and are best enjoyed while young and fresh. The version “mit hefe” is served with yeast sediment stirred in; the krystal version is filtered for excellent clarity. Bottles with yeast are traditionally swirled or gently rolled prior to serving. The character of a krystal weizen is generally fruitier and less phenolic than that of the hefe-weizen.</NOTES>
+      <IBU_MIN>8.00000000</IBU_MIN>
+      <CARB_MIN>0.00000000</CARB_MIN>
+      <COLOR_MAX>8.00000000</COLOR_MAX>
+      <CATEGORY_NUMBER>15</CATEGORY_NUMBER>
+    </STYLE>
+  </RECIPE>
+  <RECIPE>
+    <AGE>14</AGE>
+    <FERMENTATION_STAGES>1</FERMENTATION_STAGES>
+    <BATCH_SIZE>3.7854117891320316</BATCH_SIZE>
+    <SECONDARY_TEMP>21.0</SECONDARY_TEMP>
+    <TYPE>Extract</TYPE>
+    <BOIL_SIZE>5.678117683698047</BOIL_SIZE>
+    <TERTIARY_TEMP>21.0</TERTIARY_TEMP>
+    <DISPLAY_OG>0.0</DISPLAY_OG>
+    <NAME>Chinook IPA</NAME>
+    <FG>1.012</FG>
+    <EQUIPMENT/>
+    <SECONDARY_AGE>0</SECONDARY_AGE>
+    <PRIMARY_AGE>14</PRIMARY_AGE>
+    <OG>1.067</OG>
+    <VERSION>1</VERSION>
+    <PRIMARY_TEMP>21.0</PRIMARY_TEMP>
+    <NOTES/>
+    <DISPLAY_FG>0.0</DISPLAY_FG>
+    <BREWER/>
+    <TERTIARY_AGE>0</TERTIARY_AGE>
+    <BOIL_TIME>45</BOIL_TIME>
+    <EFFICIENCY>100.0</EFFICIENCY>
+    <HOPS>
+      <HOP>
+        <NAME>Chinook</NAME>
+        <VERSION>0</VERSION>
+        <ALPHA>13.0</ALPHA>
+        <AMOUNT>0.003543690395605944</AMOUNT>
+        <USE>Boil</USE>
+        <TIME>45</TIME>
+        <NOTES>Strong bittering hop. Heavy and spicy. Used for: Ales, porters, stouts</NOTES>
+        <TYPE>Hop</TYPE>
+        <FORM>Pellet</FORM>
+      </HOP>
+      <HOP>
+        <NAME>Chinook</NAME>
+        <VERSION>0</VERSION>
+        <ALPHA>13.0</ALPHA>
+        <AMOUNT>0.003543690395605944</AMOUNT>
+        <USE>Boil</USE>
+        <TIME>10</TIME>
+        <NOTES>Strong bittering hop. Heavy and spicy. Used for: Ales, porters, stouts</NOTES>
+        <TYPE>Hop</TYPE>
+        <FORM>Pellet</FORM>
+      </HOP>
+      <HOP>
+        <NAME>Chinook</NAME>
+        <VERSION>0</VERSION>
+        <ALPHA>13.0</ALPHA>
+        <AMOUNT>0.007087380791211888</AMOUNT>
+        <USE>Boil</USE>
+        <TIME>1</TIME>
+        <NOTES>Strong bittering hop. Heavy and spicy. Used for: Ales, porters, stouts</NOTES>
+        <TYPE>Hop</TYPE>
+        <FORM>Pellet</FORM>
+      </HOP>
+    </HOPS>
+    <FERMENTABLES>
+      <FERMENTABLE>
+        <NAME>Caramel/Crystal Malt - 10L</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Grain</TYPE>
+        <AMOUNT>0.06805807622504537</AMOUNT>
+        <YIELD>76.08695652173897</YIELD>
+        <COLOR>10.0</COLOR>
+        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
+      </FERMENTABLE>
+      <FERMENTABLE>
+        <NAME>Caramel/Crystal Malt -120L</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Grain</TYPE>
+        <AMOUNT>0.022686025408348458</AMOUNT>
+        <YIELD>71.73913043478242</YIELD>
+        <COLOR>120.0</COLOR>
+        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
+      </FERMENTABLE>
+      <FERMENTABLE>
+        <NAME>Light Dry Extract</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Extract</TYPE>
+        <AMOUNT>0.6805807622504537</AMOUNT>
+        <YIELD>95.65217391304358</YIELD>
+        <COLOR>8.0</COLOR>
+        <ADD_AFTER_BOIL>false</ADD_AFTER_BOIL>
+      </FERMENTABLE>
+    </FERMENTABLES>
+    <MISCS/>
+    <YEASTS>
+      <YEAST>
+        <NAME>Safale US-05</NAME>
+        <VERSION>0</VERSION>
+        <TYPE>Yeast</TYPE>
+        <AMOUNT>0.05</AMOUNT>
+        <LABORATORY>Fermentis</LABORATORY>
+        <PRODUCT_ID>US-05</PRODUCT_ID>
+        <MIN_TEMPERATURE>18</MIN_TEMPERATURE>
+        <MAX_TEMPERATURE>18</MAX_TEMPERATURE>
+        <ATTENUATION>80.0</ATTENUATION>
+      </YEAST>
+    </YEASTS>
+    <WATERS/>
+    <MASH>
+      <TUN_WEIGHT>0.00000000</TUN_WEIGHT>
+      <GRAIN_TEMP>20.00000000</GRAIN_TEMP>
+      <VERSION>1</VERSION>
+      <NAME>New Mash Profile</NAME>
+      <NOTES/>
+      <TUN_SPECIFIC_HEAT>0.00000000</TUN_SPECIFIC_HEAT>
+      <EQUIP_ADJUST>FALSE</EQUIP_ADJUST>
+      <TUN_TEMP>20.00000000</TUN_TEMP>
+      <SPARGE_TEMP>75.55550000</SPARGE_TEMP>
+      <PH>7.00000000</PH>
+      <MASH_STEPS/>
+    </MASH>
+    <STYLE>
+      <PROFILE>Aroma: A prominent to intense hop aroma with a citrusy, floral, perfume-like, resinous, piney, and/or fruity character derived from American hops. Many versions are dry hopped and can have an additional grassy aroma, although this is not required. Some clean malty sweetness may be found in the background, but should be at a lower level than in English examples. Fruitiness, either from esters or hops, may also be detected in some versions, although a neutral fermentation character is also acceptable. Some alcohol may be noted. Appearance: Color ranges from medium gold to medium reddish copper; some versions can have an orange-ish tint. Should be clear, although unfiltered dry-hopped versions may be a bit hazy. Good head stand with white to off-white color should persist. Flavor: Hop flavor is medium to high, and should reflect an American hop character with citrusy, floral, resinous, piney or fruity aspects. Medium-high to very high hop bitterness, although the malt backbone will support the strong hop character and provide the best balance. Malt flavor should be low to medium, and is generally clean and malty sweet although some caramel or toasty flavors are acceptable at low levels. No diacetyl. Low fruitiness is acceptable but not required. The bitterness may linger into the aftertaste but should not be harsh. Medium-dry to dry finish. Some clean alcohol flavor can be noted in stronger versions. Oak is inappropriate in this style. May be slightly sulfury, but most examples do not exhibit this character. Mouthfeel: Smooth, medium-light to medium-bodied mouthfeel without hop-derived astringency, although moderate to medium-high carbonation can combine to render an overall dry sensation in the presence of malt sweetness. Some smooth alcohol warming can and should be sensed in stronger (but not all) versions. Body is generally less than in English counterparts.</PROFILE>
+      <ABV_MIN>5.50000000</ABV_MIN>
+      <CARB_MAX>0.00000000</CARB_MAX>
+      <FG_MAX>1.01800000</FG_MAX>
+      <IBU_MAX>70.00000000</IBU_MAX>
+      <TYPE>Ale</TYPE>
+      <NAME>American IPA</NAME>
+      <STYLE_GUIDE>BJCP 2008</STYLE_GUIDE>
+      <OG_MIN>1.05600000</OG_MIN>
+      <CATEGORY>India Pale Ale (IPA)</CATEGORY>
+      <OG_MAX>1.07500000</OG_MAX>
+      <COLOR_MIN>6.00000000</COLOR_MIN>
+      <ABV_MAX>7.50000000</ABV_MAX>
+      <EXAMPLES>Bell’s Two-Hearted Ale, AleSmith IPA, Russian River Blind Pig IPA, Stone IPA, Three Floyds Alpha King, Great Divide Titan IPA, Bear Republic Racer 5 IPA, Victory Hop Devil, Sierra Nevada Celebration Ale, Anderson Valley Hop Ottin’, Dogfish Head 60 Minute IPA, Founder’s Centennial IPA, Anchor Liberty Ale, Harpoon IPA, Avery IPA</EXAMPLES>
+      <INGREDIENTS>Pale ale malt (well-modified and suitable for single-temperature infusion mashing); American hops; American yeast that can give a clean or slightly fruity profile. Generally all-malt, but mashed at lower temperatures for high attenuation. Water character varies from soft to moderately sulfate. Versions with a noticeable Rye character (“RyePA”) should be entered in the Specialty category.</INGREDIENTS>
+      <FG_MIN>1.01000000</FG_MIN>
+      <STYLE_LETTER>B</STYLE_LETTER>
+      <VERSION>1</VERSION>
+      <NOTES>A decidedly hoppy and bitter, moderately strong American pale ale. An American version of the historical English style, brewed using American ingredients and attitude.</NOTES>
+      <IBU_MIN>40.00000000</IBU_MIN>
+      <CARB_MIN>0.00000000</CARB_MIN>
+      <COLOR_MAX>15.00000000</COLOR_MAX>
+      <CATEGORY_NUMBER>14</CATEGORY_NUMBER>
     </STYLE>
   </RECIPE>
 </RECIPES>
