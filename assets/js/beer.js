@@ -66,6 +66,8 @@ function displayRecipe(xml, recipe) {
 			amount += ' (' + time + 'mins)';
 		} else if (use === 'Dry Hop') {
 			amount += ' (dry hop)';
+		} else if (use === 'First Wort') {
+			amount += ' (first-wort)';
 		}
 
 		table += "<tr><td>" + 
