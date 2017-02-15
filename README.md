@@ -18,6 +18,4 @@ License
 
 Credits
 -------
-* Original repo: https://github.com/pozh/Initio/issues
-* Design and development: **Sergey Pozhilov** - http://pozhilov.com
-* More free templates by Sergey: http://gettemplate.com
+* Original repo: https://github.com/pozh/Initio/issue
