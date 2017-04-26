@@ -116,25 +116,49 @@
 				</div>
 
 				<h2>Cider</h2>
-				<p class="lead text-justified text-muted"> 
-				Cider is a block level storage system which allows variable
-				redundancy at the granularity of a single block. I worked on
-				this
-				project with Dr. Vipin Choudhary. The system was initially
-				developed for disk-based systems on Linux. <br>
-				The design and
-				method we used in the system were patented (Patent pending).
-				We are working on an extension to this work to optimize Cider
-				for SSD based archival storage. We have developed a
+				<p class="lead text-justified text-muted">
+				Cider is a highly flexible and scalable virtual block device,
+				supporting temporally variable data redundancy.
+				Cider works as a distributed block data store, using erasure
+				coding for reliability and allows controlling data 
+				redundancy at the granularity of a single block.
+				I started this project with Dr. Vipin Choudhary and we built our
+				initial prototype on disk based systems. 	
+				We have a patent pending on the design and
+				method we used in the system.<br>
+
+				Our current work focuses on integrating Cider with distributed
+				flash-based arrays. To test this approach,
+				we have developed a
 				prototype of an SSD simulator (developed by <a
-	   href="https://www.linkedin.com/in/mahesh-v-480bb068" target="_blank">Mahesh Vamshi</a>)
-   which can simulate a system based on Cider's technology.
+				href="https://www.linkedin.com/in/mahesh-v-480bb068" target="_blank">Mahesh Vamshi</a>)
+			which can simulate a system based on Cider's technology.
+				Our goal is to create a centrally managed flash based array, in
+				which
+				some of the low level functionality of FTLs in each SSD is
+				moved to the a master node which manages the flash
+				chips spanning across multiple storage nodes.
+				Our paper based on this work will appear in the invited track of
+				<a href="http://www.icccn.org/icccn17" target="_blank">ICCCN '17 (July
+					31-August 3)</a>.
 				</p>
 				<div id="publish">
+					<b>Cider: A Case for Block Level Variable Redundancy on a
+						Distributed Flash Array</b><br>
+					<b>Sharath Chandrashekhara</b>, Madhusudhan R. Kumar, Mahesh
+					Venkataramaiah, and Vipin Choudhary<br>
+					The 26th International Conference on Computer Communications
+					and Networks (ICCCN 2017).<br>
+				<a
+	   href="assets/files/cider-icccn.bibtex" target="_blank">[bibtex]</a>
+				<a
+	   href="assets/files/cider-icccn.pdf"
+	   target="_blank">[Paper
+	   (PDF)]</a><br>
+					<br>
 					<b>System and method for fault-tolerant block data storage</b><br>
 					Inventors: <b>Sharath Chandrashekhara</b>, Madhusudhan
-					Ramesh Kumar, and Vipin
-				Choudhary <br>
+					Ramesh Kumar, and Vipin Choudhary <br>
 				Application status: Patent filed in April 2015, published on
 				October 2015 (Patent pending). <br>
 
