@@ -1,0 +1,101 @@
+.img-circle {
+	height: 150px;
+	width: 150px;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	/* padding-top: 35px; */
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe {
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.bluemountain #head {
+  /* background: rgb(244, 244, 244) url(../images/bm_bg.png) top center; */
+  background-size: cover;
+  background-color: #428bca;
+  padding: 30px 0 35px 0;
+}
+
+.bluemountain #head {
+  padding: 0;
+  /* image-rendering: pixelated; */
+  /* background: transparent; */
+}
+
+.bluemountain #head .title {
+  font-size: 49px;
+  font-size: 3.0625rem;
+  color: lightsteelblue;
+  font-weight: bolder;
+  font-family: "Permanent Marker";
+  /* vertical-align: middle; */
+  /* text-align: center; */
+  /* padding-top: 40px; */
+  /* padding-bottom: 20px; */
+  /* padding-right: 3em; */
+}
+.bluemountain #head .tagline {
+  font-size: 16px;
+  font-size: 1rem;
+  margin: 15px 0 0;
+  font-family: cursive;
+  color: #f29e07;
+  /* background-color: #487bc7; */
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+  padding-bottom: 25px;
+  /* margin-right: 64px; */
+}
+
+button {
+	background-color: #555555;
+	border: none;
+	color: white;
+	padding: 4px 2px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 10px 10px;
+	cursor: pointer;
+	min-width: 100px
+}
+
+a.button {
+	background-color: #555555;
+	border: none;
+	color: white;
+	padding: 4px 2px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 10px 10px;
+	min-width: 100px
+}
+
+table, th, td {
+	border: 1px solid;
+	padding-left: 5px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	background-color: lightyellow;
+}
+
+th {
+	text-align: center;
+}
