@@ -181,6 +181,7 @@ h1 {
   font-size: 40px;
   font-size: 2rem;
   text-align: left;
+  /* margin-bottom: 0px; */
 }
 h2 {
   font-size: 36px;
@@ -248,8 +249,8 @@ a:hover {
 }
 #head img.img-circle {
   display: block;
-  width: 300px;
-  height: 300px;
+  /* width: 300px; */
+  /* height: 300px; */
   overflow: hidden;
   border: 9px solid rgba(0,0,0,0.075);
   margin: 0 auto;
