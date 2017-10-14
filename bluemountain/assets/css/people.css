@@ -6,6 +6,10 @@ h2 {
   margin-bottom: 25px;
 }
 
+.profile {
+border-top: 4px solid #cedef1;
+}
+
 h4 {
   color: lightgray;
 }
@@ -15,7 +19,7 @@ h5 {
 }
 
 p.desc {
-  color: #777;
+  color: #767676;
   text-align: justify;
   /* background-color: #f5f5f5; */
   padding: 10px;
