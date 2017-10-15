@@ -10,6 +10,7 @@
 
 h1#logo {
 	margin-bottom: 0px;
+	margin-top: 0px;
 }
 
 .img-circle {
@@ -53,12 +54,20 @@ img.home-logo {
   /* background: transparent; */
 }
 
-.bluemountain #head .title {
+.bluemountain #head .logo-title {
   font-size: 49px;
   font-size: 3.0625rem;
   color: #fff;
   font-weight: bolder;
   font-family: "Permanent Marker";
+}
+
+.bluemountain #head .title {
+  font-size: 49px;
+  font-size: 3.0625rem;
+  color: #fff;
+  font-weight: bolder;
+  font-family: "Kalam";
   /* vertical-align: middle; */
   /* text-align: center; */
   /* padding-top: 40px; */
@@ -78,6 +87,7 @@ img.home-logo {
   text-align: center;
   padding-bottom: 25px;
   /* margin-right: 64px; */
+  font-family: 'Kalam';
 }
 
 button {

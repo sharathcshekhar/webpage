@@ -1,9 +1,11 @@
 h2 {
   /* padding: 10px 0; */
   background-color: rgba(66, 139, 202, 0.28);
-  color: #428bca;
+  color: #5884cc;
   padding: 2px;
   margin-bottom: 25px;
+  /* font-family: OpenSans; */
+  margin-top: 0px;
 }
 
 .profile {
@@ -25,5 +27,6 @@ p.desc {
   padding: 10px;
   /* height: -webkit-fill-available; */
   max-height: 10em;
+  /* font-family: PT serif; */
 }
 

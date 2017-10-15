@@ -187,11 +187,15 @@ h2 {
   font-size: 36px;
   font-size: 2rem;
   text-align: left;
+  /* background: #b8d0ea; */
+  /* text-align: center; */
+  color: #5a85cc;
 }
 h3 {
   font-size: 24px;
   /* font-size: 1.875rem; */
   text-align: left;
+  color: #5a85cc;
 }
 h4 {
   font-size: 24px;
@@ -211,7 +215,7 @@ a:hover {
   font-weight: 400;
   font-size: 21px;
   font-size: 1.15rem;
-  font-family: PT serif;
+  /* font-family: PT serif; */
   color: #767676;
 }
 .text-msg {
@@ -252,9 +256,9 @@ a:hover {
   /* width: 300px; */
   /* height: 300px; */
   overflow: hidden;
-  border: 9px solid rgba(0,0,0,0.075);
+  border: 7px solid rgba(0,0,0,0.075);
   margin: 0 auto;
-  /* background-color: #fef9ea; */
+  background-color: #88a9ed;
   border-image: aliceblue;
   /* padding: 0px; */
   /* border-radius: 50%; */
@@ -264,6 +268,7 @@ a:hover {
   text-align: right;
   /* min-width: auto; */
   /* margin-left: 9em; */
+  margin-bottom: 10px;
 }
 #head .title {
   font-family: Alice, Georgia, serif;
