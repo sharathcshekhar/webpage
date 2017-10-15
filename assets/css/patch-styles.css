@@ -20,6 +20,13 @@ div#publish {
 	font-weight: lighter;
 }
 
+.news {
+	font-style: italic;
+	font-weight: lighter;
+	background: ghostwhite;
+	padding-top: 5px;
+}
+
 .navbar-default .navbar-nav > .active > a {
   background-color: rgba(66, 139, 202, 0.4)
 }

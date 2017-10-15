@@ -32,7 +32,7 @@
 		</h1>
 	</div>
 
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default navbar-sticky">
 		<div class="container-fluid">
 			
 			<div class="navbar-header">
@@ -68,37 +68,71 @@
 			<div class="col-md-12">
 				<p class="lead text-justified text-muted"> 
 				My current research focus is on providing flexible and
-				personalized storage on mobile systems. We are working on a
-				system that enables users to personalize how their data is uploaded
-				to the cloud and where it
-				is stored in the cloud. At the same time, we provide a platform
-				which lets the developers create
-				customized data management solutions for end users. The goal is to let the end
-				users choose from a set of available data management solutions
-				which can be easily installed on any phones. <br>
-				
-				This system is built on Android and is a work in progress
-				partly based on our previously
-				published workshop paper, <a
-				href=#bluemountain>BlueMountain</a>. I am currently working with
-			Taeyeon Ki, Dr. Steve Ko and Dr. Karthik Dantu on this project.
+				personalized storage on mobile systems. We are working on
+				building systems that make the data management on mobile systems
+				better. While our primary goal is to provide users the
+				flexibility to manage their data, we are also trying to
+				understand various
+				preferences a user might have when using an app.
+				</p>
+				<p class="lead text-justified text-muted"> 
+				We are building these systems on Android and we have published some
+				of these ideas through our work on 
+				<a
+				href=#bluemountain>BlueMountain</a>. 
 				</p>
 				<h2 id="bluemountain">BlueMountain</h2>
 				<p class="lead text-justified text-muted"> 
-				In this paper, we explore the design space of an app
-				instrumentation tool that automatically integrates cloud storage services for
-				Android apps. Our
-				goal is to allow developers to treat all storage operations as
-				local operations,
-				and automatically enable cloud features customized for
-				individual needs of users
-				and developers. <br>
-				We discuss various scenarios that can benefit
-				from such an automated tool, challenges associated with the development of
-				it, and our ideas to address these challenges. We are
-				extending this idea of providing customizable storage solutions
-				in our current research.
+				BlueMountain adds flexibility for data management on mobile
+				systems by proposing an ecosystem which decouples the app-logic
+				and data management logic. BlueMountain proposes a number of
+				practical solutions for seamlessly transitioning from the
+				current eco-system to what we propose.
 				</p>
+				<p class="lead text-justified text-muted"> 
+				These extensions were added based on the experiences from
+				our initial work which explored the design space of an app
+				instrumentation tool that automatically integrates cloud storage
+				services for Android apps. Our current system allows a user to
+				download an app from an online app store and customize its data
+				management by linking it with any of the available data
+				management solutions. You can find more information on our
+				project website 
+	   <a href="http://bluemountain.cse.buffalo.edu/"
+		   target="_blank">BlueMountain</a>.
+				</p>
+			<div id="publish">
+				<b>BlueMountain: An Architecture for Customized Data
+				   Management on Mobile Systems	</b><br>	
+				 <b>Sharath Chandrashekhara</b>, Taeyeon Ki, Kyungho Jeon, Karthik
+					Dantu, Steven Y. Ko<br>
+			    Proceedings of the 23rd Annual International Conference on
+				Mobile Computing and Networking (MobiCom) 2017
+				<br>
+				<a
+	   href="assets/files/bluemountain-mobicom17.bibtex" target="_blank">[bibtex]</a>
+				<a
+	   href="assets/files/bluemountain-mobicom17.pdf"
+	   target="_blank">[Paper
+	   (PDF)]</a>
+				</div>
+					<div id="publish">
+						<b>Demo: BlueMountain: An Architecture for Customized Data
+				   Management on Mobile Systems	</b><br>	
+			   <b>Sharath Chandrashekhara</b>, Taeyeon Ki, Kyungho Jeon, Karthik
+					Dantu, Steven Y. Ko <br>
+			    Proceedings of the 15th Annual International Conference on
+				Mobile Systems, Applications, and Services (MobiSys), 2017
+				<br>
+				<a
+	   href="http://bluemountain.cse.buffalo.edu/assets/files/bluemountain-mobisys17-poster.pdf"
+	target="_blank">[Poster(PDF)] </a>
+				<a
+	   href="http://bluemountain.cse.buffalo.edu/assets/files/bluemountain-mobisys17-demo.pdf"
+	   target="_blank">[Abstract
+	   (PDF)]</a>
+				</div>
+
 				<div id="publish">
 					<b>Enabling Automated, Rich, and Versatile Data Management for
 						Android Apps with BlueMountain </b><br>	
@@ -108,9 +142,9 @@
 			    Systems (HotStorage), 2015 <br>
 
 				<a
-	   href="assets/files/bluemountain-hotstorage15.bibtex" target="_blank">[bibtex]</a>
+	   href="http://bluemountain.cse.buffalo.edu/assets/files/bluemountain-hotstorage15.bibtex" target="_blank">[bibtex]</a>
 				<a
-	   href="https://nsr.cse.buffalo.edu/wp-content/uploads/2015/07/bluemountain-hotstorage15.pdf"
+	   href="http://bluemountain.cse.buffalo.edu/assets/files/bluemountain-hotstorage15.pdf"
 	   target="_blank">[Paper
 	   (PDF)]</a>
 				</div>
@@ -130,15 +164,17 @@
 				Our current work focuses on integrating Cider with distributed
 				flash-based arrays. To test this approach,
 				we have developed a
-				prototype of an SSD simulator (developed by <a
-				href="https://www.linkedin.com/in/mahesh-v-480bb068" target="_blank">Mahesh Vamshi</a>)
-			which can simulate a system based on Cider's technology.
+				prototype of an SSD simulator
+	   			<!-- (developed by <a
+				href="https://www.linkedin.com/in/mahesh-v-480bb068"
+				target="_blank">Mahesh Vamshi</a>) -->
+				which can simulate a system based on Cider's technology.
 				Our goal is to create a centrally managed flash based array, in
 				which
 				some of the low level functionality of FTLs in each SSD is
-				moved to the a master node which manages the flash
+				moved to the master node which manages the flash
 				chips spanning across multiple storage nodes.
-				Our paper based on this work will appear in the invited track of
+				Our work was published in an invited track of
 				<a href="http://www.icccn.org/icccn17" target="_blank">ICCCN '17 (July
 					31-August 3)</a>.
 				</p>
@@ -202,6 +238,10 @@
 				<p class="lead text-justified text-muted"> 
 				PigOut is a system that enables federated data processing over
 				multiple Hadoop clusters.
+				You can find more information on our
+				project website 
+			   <a href="http://pigout.cse.buffalo.edu/"
+		   target="_blank">PigOut</a>.
 				</p>
 				<div id="publish">
 					</p>
