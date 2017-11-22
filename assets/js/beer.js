@@ -132,3 +132,29 @@ function toggleRecipe(recipe) {
 		x.style.display = 'none';
 	}
 }
+
+window.onscroll = function() {
+	scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 1000 ||
+			document.documentElement.scrollTop > 1000) {
+		document.getElementById("topBtn").style.display = "block";
+		//window.history.pushState('page2', 'Title', '#recipes');
+	} else {
+		document.getElementById("topBtn").style.display = "none";
+	}
+}
+
+var prevScrollPos = 0;
+
+function topFunction() {
+	window.scrollTo(0, prevScrollPos);
+	prevScrollPos = 0;
+}
+
+function gotoRecipe(recipe) {
+	prevScrollPos = window.pageYOffset;
+	window.location = "#" + recipe
+}
