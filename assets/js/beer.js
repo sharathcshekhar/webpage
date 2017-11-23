@@ -150,6 +150,7 @@ function scrollFunction() {
 var prevScrollPos = 0;
 
 function topFunction() {
+	window.location = "#";
 	window.scrollTo(0, prevScrollPos);
 	prevScrollPos = 0;
 }
